@@ -1,6 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+}
+
+.button {
+  border: 1px solid white;
+  border-radius: 5px;
+  color: #ffe3d5;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5em 1.25em;
+}
+.button:hover {
+  border-color: #ffa550;
+  color: #ffa550;
+}
+
+.link {
+  color: #ffe3d5;
+  text-decoration: none;
+}
+.link:hover {
+  color: #ffa550;
 }
 
 .container {
@@ -40,37 +63,28 @@ body {
   width: 60vw;
   transition: 0.7s all ease-out;
 }
-.menu .menu__close-container .menu__icon--close {
+.menu .menu__container-close .menu__icon--close {
   font-size: 1.7em;
   position: absolute;
   top: 0;
   left: 0;
   padding: 1em;
 }
-.menu .menu__user-container {
+.menu .menu__container-user {
   padding: 2em 0;
 }
-.menu .menu__user-container .menu__user-subcontainer {
+.menu .menu__container-user .menu__container-user-content {
   display: flex;
   justify-content: center;
 }
-.menu .menu__user-container .menu__user-subcontainer .menu__user-icon {
+.menu .menu__container-user .menu__container-user-content .menu__icon--user {
   font-size: 3em;
   margin-bottom: 0.3em;
 }
-.menu .menu__user-container .menu__user-subcontainer .menu__list-signup {
+.menu .menu__container-user .menu__container-user-content .menu__list--user {
   display: flex;
   flex-direction: column;
   gap: 0.8em;
-}
-.menu .menu__user-container .menu__user-subcontainer .menu__list-signup .menu__link {
-  border: 1px solid white;
-  border-radius: 5px;
-  color: #ffe3d5;
-  font-size: 1.2em;
-  text-align: center;
-  text-decoration: none;
-  padding: 0.5em 1.25em;
 }
 .menu .menu__title {
   text-align: center;
@@ -84,9 +98,7 @@ body {
   gap: 1.2em;
 }
 .menu .menu__mobile .menu__item .menu__link {
-  color: #ffe3d5;
-  text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 .menu .menu__mobile .menu__item .menu__icon {
   margin-right: 1em;

@@ -3,3 +3,26 @@ body {
    font-family: $main-font;
    font-size: 16px;
 }
+
+.button {
+   border: 1px solid $button-border;
+   border-radius: 5px;
+   color: $button-color;
+   font-size: $button-font;
+   text-align: center;
+   text-decoration: none;
+   padding: $padding-button;
+
+   &:hover {
+      border-color: $button-border-hover-color;
+      color: $button-font-hover-color;
+   }
+}
+
+.link {
+   color: $link-color;
+   text-decoration: none;
+   &:hover {
+      color: #ffa550;
+   }
+}

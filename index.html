@@ -7,11 +7,6 @@
       <!-- Reset CSS -->
       <link rel="stylesheet" href="assets/css/reset.css" />
 
-      <!-- Roboto -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
-
       <!-- Cabin Sketch -->
       <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet" />
 
@@ -25,53 +20,52 @@
    </head>
    <body>
       <section class="menu">
-        <div class="menu__close-container">
+         <div class="menu__container-close">
             <span class="menu__icon--close" onclick="toggleMenu(menuSection)"><i class="fa-solid fa-x menu__icon"></i></span>
-		</div>
-        
-         <div class="menu__user-container">
-            <div class="menu__user-subcontainer">
-               <span class="menu__user-icon"><i class="fa-solid fa-users"></i></span>
+         </div>
+
+         <div class="menu__container-user">
+            <div class="menu__container-user-content">
+               <span class="menu__icon--user"><i class="fa-solid fa-users"></i></span>
             </div>
-            <div class="menu__user-subcontainer">
+            <div class="menu__container-user-content">
                <ul>
-                  <li class="menu__list-signup">
-                     <a href="#" class="menu__link">Cadastre-se</a>
-                     <a href="#" class="menu__link">Login</a>
+                  <li class="menu__list--user">
+                     <a href="#" class="menu__link--user button">Cadastre-se</a>
+                     <a href="#" class="menu__link--user button">Login</a>
                   </li>
                </ul>
             </div>
          </div>
-         <h4 class="menu__title">Para onde vamos?</h4>
+         <div class="menu__container-title">
+            <h4 class="menu__title">Para onde vamos?</h4>
+         </div>
+
          <nav class="menu__mobile">
             <ul class="menu__list">
                <li class="menu__item">
-                  <a href="#" class="menu__link"><i class="fa-solid fa-house menu__icon"></i>Inicio</a>
-                  <a href="#" class="menu__link">Produtos</a>
-                  <a href="#" class="menu__link">Calças</a>
-                  <a href="#" class="menu__link">Shorts</a>
-                  <a href="#" class="menu__link">Vestidos</a>
+                  <a href="#" class="menu__link link">Inicio</a>
+                  <a href="#" class="menu__link link">Produtos</a>
+                  <a href="#" class="menu__link link">Calças</a>
+                  <a href="#" class="menu__link link">Shorts</a>
+                  <a href="#" class="menu__link link">Vestidos</a>
                </li>
             </ul>
          </nav>
       </section>
-         <div class="container">
-            <header class="header">
-               <div class="header__container-icon">
-                  <span class="header__mobile-icon" id="menu__mobile"><i class="fa-solid fa-bars"></i></span>
-               </div>
-
-               <div class="header__container-logo">
-                  <h3 class="header__container-text">M-I STORE</h3>
-               </div>
-
-               <div class="header__container-icon">
-                  <span class="header__mobile-icon"><i class="fa-solid fa-cart-shopping"></i></span>
-               </div>
-            </header>
-        <main>
-         </div>
-        </main>
+      <div class="container">
+         <header class="header">
+            <div class="header__container-icon">
+               <span class="header__mobile-icon" id="menu__mobile"><i class="fa-solid fa-bars"></i></span>
+            </div>
+            <div class="header__container-logo">
+               <h3 class="header__container-text">M-I STORE</h3>
+            </div>
+            <div class="header__container-icon">
+               <span class="header__mobile-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+            </div>
+         </header>
+      </div>
       <script src="js/main.js"></script>
    </body>
 </html>

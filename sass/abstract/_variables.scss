@@ -1,16 +1,27 @@
 // Background Colors
 $main-color: #f7b390;
 
+// Button Config
+$button-border: white;
+$button-color: #ffe3d5;
+$button-font: 1.5em;
+$button-hover: #f7b390;
+
+// Button Hover Config
+$button-font-hover-color: #ffa550;
+$button-border-hover-color: #ffa550;
+
 // Font Colors
 $link-color: #ffe3d5;
+$hover-color: #ffa550;
 
 // Font families
 $main-font: "Roboto", sans-serif;
 
 // Font size
-$giant-font: 3em;
 $big-font: 1.7em;
-$medium-font: 1.2em;
+$medium-font: 1.4em;
+$giant-font: 3em;
 
 // Padding
 $padding-default: 0 1em;
