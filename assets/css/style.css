@@ -5,7 +5,7 @@ body {
 }
 
 .button {
-  border: 1px solid white;
+  border: 1px solid #fff2f7;
   border-radius: 5px;
   color: #ffe3d5;
   font-size: 1.5em;
@@ -14,16 +14,16 @@ body {
   padding: 0.5em 1.25em;
 }
 .button:hover {
-  border-color: #ffa550;
-  color: #ffa550;
+  border-color: #785646;
+  color: #785646;
 }
 
 .link {
-  color: #ffe3d5;
+  color: #fff2f7;
   text-decoration: none;
 }
 .link:hover {
-  color: #ffa550;
+  color: #785646;
 }
 
 .container {
@@ -34,7 +34,9 @@ body {
 }
 .container .header {
   align-items: center;
-  background-color: #f7b390;
+  background-color: white;
+  border-bottom: 2px solid #382821;
+  color: #382821;
   display: flex;
   height: 10vh;
   justify-content: space-between;
@@ -44,24 +46,28 @@ body {
   font-size: 1.7em;
   padding: 1em;
 }
-.container .header .header__container-logo .header__image {
-  max-height: 10vh;
+.container .header .header__container-logo .header__container-logo {
+  max-height: 8vh;
 }
 .container .header .header__container-logo .header__container-text {
   font-family: "Cabin Sketch", cursive;
-  font-size: 32px;
+  font-size: 1.7em;
 }
 
 .menu {
-  background-color: rgb(0, 0, 0);
-  color: #f7b390;
+  background-color: #382821;
+  color: #ffdfd0;
   padding: 2em;
   position: fixed;
   top: 0;
   left: -500px;
+  z-index: 2;
   height: 100vh;
   width: 60vw;
   transition: 0.7s all ease-out;
+}
+.menu .menu__container-close {
+  cursor: pointer;
 }
 .menu .menu__container-close .menu__icon--close {
   font-size: 1.7em;
@@ -85,6 +91,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.8em;
+}
+.menu .menu__container-user .menu__container-user-content .menu__list--user .menu__span--user {
+  font-weight: 300;
 }
 .menu .menu__title {
   text-align: center;
@@ -111,6 +120,106 @@ body {
 .isOpen {
   background-color: rgba(5, 5, 5, 0.329);
   z-index: 5;
+}
+
+.swiper {
+  width: auto;
+  height: auto;
+}
+
+.swiper-wrapper img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.banner__image {
+  object-fit: cover;
+}
+
+.categories .categories__list {
+  padding: 1em 0;
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+  padding-left: 1em;
+}
+.categories .categories__list .categories__item {
+  text-align: center;
+}
+.categories .categories__list .categories__item .categories__link {
+  color: black;
+  font-weight: 300;
+}
+.categories .categories__list .categories__item .categories__link .categories__image--link {
+  background-color: white;
+  border: 2px solid #382821;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  position: relative;
+}
+.categories .categories__list .categories__item .categories__link .categories__icon {
+  color: #382821;
+  font-size: 32px;
+  padding: 0.7em;
+}
+
+.clothes__title {
+  color: #382821;
+  font-size: 1.7em;
+  font-weight: 300;
+  padding: 1em 0 0.5em 0;
+  text-align: center;
+}
+
+.products {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 0.5em;
+}
+.products .product {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 1.3em 0 0 0;
+}
+.products .product .product__banner {
+  border: 1px solid #fff2f7;
+  width: 180px;
+  height: 180px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.products .product .product__banner--1 {
+  background-image: url("../../../assets/img/product1.jpg");
+}
+.products .product .product__banner--2 {
+  background-image: url("../../../assets/img/product2.jpg");
+}
+.products .product .product__banner--3 {
+  background-image: url("../../../assets/img/product3.jpg");
+}
+.products .product .product__banner--4 {
+  background-image: url("../../../assets/img/product4.jpg");
+}
+.products .product .product__title {
+  font-size: 18px;
+  font-weight: 300;
+}
+.products .product .product__price {
+  color: #382821;
+  font-size: 20px;
+  font-weight: 800;
+}
+.products .product .product__button {
+  background-color: #f7b390;
+  font-size: 1.4em;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

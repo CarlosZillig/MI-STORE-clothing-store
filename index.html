@@ -16,6 +16,9 @@
       <!-- CSS -->
       <link rel="stylesheet" href="assets/css/style.css" />
 
+      <!--Swiper js-->
+      <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
       <title>M-I Store | Home</title>
    </head>
    <body>
@@ -32,7 +35,7 @@
                <ul>
                   <li class="menu__list--user">
                      <a href="#" class="menu__link--user button">Cadastre-se</a>
-                     <a href="#" class="menu__link--user button">Login</a>
+                     <span class="menu__span--user">Ja tem uma conta? <a href="#" class="menu__link link">Fazer login</a></span>
                   </li>
                </ul>
             </div>
@@ -59,13 +62,135 @@
                <span class="header__mobile-icon" id="menu__mobile"><i class="fa-solid fa-bars"></i></span>
             </div>
             <div class="header__container-logo">
-               <h3 class="header__container-text">M-I STORE</h3>
+               <img src="assets/img/logo.svg" alt="Logo MI Store" class="header__container-logo" />
             </div>
             <div class="header__container-icon">
                <span class="header__mobile-icon"><i class="fa-solid fa-cart-shopping"></i></span>
             </div>
          </header>
       </div>
+      <section class="banner">
+         <div class="banner__container">
+            <!-- Slider main container -->
+            <div class="swiper">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                     <img src="assets/img/roupas.png" alt="" class="banner__image" />
+                  </div>
+                  <div class="swiper-slide">
+                     <img src="assets/img/roupas2.png" alt="" class="banner__image" />
+                  </div>
+               </div>
+               <!-- If we need pagination -->
+               <div class="swiper-pagination"></div>
+
+               <!-- If we need scrollbar -->
+               <div class="swiper-scrollbar"></div>
+            </div>
+         </div>
+      </section>
+
+      <section class="categories">
+         <div class="categories__container">
+            <ul class="categories__list">
+               <li class="categories__item">
+                  <a href="#" class="categories__link link">
+                     <div class="categories__image--link">
+                        <i class="categories__icon fa-solid fa-shirt"></i>
+                     </div>
+                     <p class="categories__link">Camisas</p>
+                  </a>
+               </li>
+
+               <li class="categories__item">
+                  <a href="#" class="categories__link link">
+                     <div class="categories__image--link">
+                        <i class="categories__icon fa-solid fa-shirt"></i>
+                     </div>
+                     <p class="categories__link">Camisas</p>
+                  </a>
+               </li>
+
+               <li class="categories__item">
+                  <a href="#" class="categories__link link">
+                     <div class="categories__image--link">
+                        <i class="categories__icon fa-solid fa-shirt"></i>
+                     </div>
+                     <p class="categories__link">Camisas</p>
+                  </a>
+               </li>
+
+               <li class="categories__item">
+                  <a href="#" class="categories__link link">
+                     <div class="categories__image--link">
+                        <i class="categories__icon fa-solid fa-shirt"></i>
+                     </div>
+                     <p class="categories__link">Camisas</p>
+                  </a>
+               </li>
+
+               <li class="categories__item">
+                  <a href="#" class="categories__link link">
+                     <div class="categories__image--link">
+                        <i class="categories__icon fa-solid fa-shirt"></i>
+                     </div>
+                     <p class="categories__link">Camisas</p>
+                  </a>
+               </li>
+
+               <li class="categories__item">
+                  <a href="#" class="categories__link link">
+                     <div class="categories__image--link">
+                        <i class="categories__icon fa-solid fa-shirt"></i>
+                     </div>
+                     <p class="categories__link">Camisas</p>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </section>
+
+      <section class="clothes">
+         <div class="clothes__container">
+            <h2 class="clothes__title">Novidades</h2>
+         </div>
+         <div class="clothes__container">
+            <div class="products">
+               <div class="product">
+                  <div class="product__banner product__banner--1"></div>
+                  <p class="product__title">Camiseta Colorida</p>
+                  <p class="product__price">R$777</p>
+                  <button type="submit" class="product__button button">Comprar</button>
+               </div>
+
+               <div class="product">
+                  <div class="product__banner product__banner--2"></div>
+                  <p class="product__title">Camiseta Preta</p>
+                  <p class="product__price">R$888</p>
+                  <button type="submit" class="product__button button">Comprar</button>
+               </div>
+
+               <div class="product">
+                  <div class="product__banner product__banner--3"></div>
+                  <p class="product__title">Macacão preto</p>
+                  <p class="product__price">R$999</p>
+                  <button type="submit" class="product__button button">Comprar</button>
+               </div>
+
+               <div class="product">
+                  <div class="product__banner product__banner--4"></div>
+                  <p class="product__title">Vestido Roxo</p>
+                  <p class="product__price">R$000</p>
+                  <button type="submit" class="product__button button">Comprar</button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
       <script src="js/main.js"></script>
+      <script src="js/swiper.js"></script>
    </body>
 </html>

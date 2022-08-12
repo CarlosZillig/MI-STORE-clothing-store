@@ -9,8 +9,20 @@
 // Header
 @import "./layout/header/header.scss";
 
-//Navegation
-@import "layout/navigation/menu-mobile.scss";
+// Navigation
+@import "./layout/navigation/menu-mobile.scss";
 
 // JavaScript
 @import "./js-styles/javascript.scss";
+
+// Home
+@import "./pages/home.scss";
+
+// Swiper/Banner
+@import "./layout/banner/banner.scss";
+
+// Categories
+@import "./layout/categories/categories.scss";
+
+// Products
+@import "./layout/products/product.scss";

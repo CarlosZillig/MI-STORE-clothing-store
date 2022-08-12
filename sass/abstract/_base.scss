@@ -14,15 +14,15 @@ body {
    padding: $padding-button;
 
    &:hover {
-      border-color: $button-border-hover-color;
-      color: $button-font-hover-color;
+      border-color: $hover-color;
+      color: $hover-color;
    }
 }
 
 .link {
-   color: $link-color;
+   color: $light-pink;
    text-decoration: none;
    &:hover {
-      color: #ffa550;
+      color: $hover-color;
    }
 }

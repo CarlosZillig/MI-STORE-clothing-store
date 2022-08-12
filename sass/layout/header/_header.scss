@@ -6,7 +6,9 @@
 
    .header {
       align-items: center;
-      background-color: $main-color;
+      background-color: white;
+      border-bottom: 2px solid $secondary-color;
+      color: $secondary-color;
       display: flex;
       height: 10vh;
       justify-content: space-between;
@@ -18,13 +20,12 @@
       }
 
       .header__container-logo {
-         .header__image {
-            max-height: 10vh;
+         .header__container-logo {
+            max-height: 8vh;
          }
-
          .header__container-text {
             font-family: "Cabin Sketch", cursive;
-            font-size: 32px;
+            font-size: $big-font;
          }
       }
    }

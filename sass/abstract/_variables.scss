@@ -1,27 +1,29 @@
-// Background Colors
+// Colors
+$light-pink: #fff2f7;
+$light-salmon: #ffdfd0;
+
 $main-color: #f7b390;
+$secondary-color: #382821;
+$third-color: #ffcbe0;
 
 // Button Config
-$button-border: white;
+$button-border: $light-pink;
 $button-color: #ffe3d5;
 $button-font: 1.5em;
-$button-hover: #f7b390;
-
-// Button Hover Config
-$button-font-hover-color: #ffa550;
-$button-border-hover-color: #ffa550;
+$button-hover: #ffa550;
 
 // Font Colors
-$link-color: #ffe3d5;
-$hover-color: #ffa550;
+$link-color: #b8846a;
+$hover-color: #785646;
 
 // Font families
 $main-font: "Roboto", sans-serif;
 
 // Font size
+$giant-font: 3em;
 $big-font: 1.7em;
 $medium-font: 1.4em;
-$giant-font: 3em;
+$small-font: 0.8em;
 
 // Padding
 $padding-default: 0 1em;

@@ -1,0 +1,30 @@
+.categories {
+   .categories__list {
+      padding: 1em 0;
+      display: flex;
+      overflow-x: scroll;
+      gap: 10px;
+      padding-left: 1em;
+
+      .categories__item {
+         text-align: center;
+         .categories__link {
+            color: black;
+            font-weight: 300;
+
+            .categories__image--link {
+               background-color: white;
+               border: 2px solid $secondary-color;
+               border-radius: 50%;
+               margin-bottom: 10px;
+               position: relative;
+            }
+            .categories__icon {
+               color: $secondary-color;
+               font-size: 32px;
+               padding: 0.7em;
+            }
+         }
+      }
+   }
+}
