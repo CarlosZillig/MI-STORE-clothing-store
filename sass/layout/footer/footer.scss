@@ -1,0 +1,16 @@
+.footer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 1.5em;
+   height: 10vh;
+   background-color: black;
+   text-align: center;
+
+   .footer__container {
+      .footer__copyright {
+         color: $main-color;
+      }
+   }
+}

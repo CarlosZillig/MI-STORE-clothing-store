@@ -1,14 +1,14 @@
-.container {
+.header {
    align-items: center;
    display: flex;
    justify-content: space-between;
    width: 100%;
 
-   .header {
+   .header__container {
       align-items: center;
       background-color: white;
-      border-bottom: 2px solid $secondary-color;
-      color: $secondary-color;
+      border-bottom: 2px solid $black-color;
+      color: $black-color;
       display: flex;
       height: 10vh;
       justify-content: space-between;
@@ -17,15 +17,19 @@
       .header__container-icon {
          font-size: $big-font;
          padding: 1em;
+
+         #menu__mobile {
+            cursor: pointer;
+         }
       }
 
       .header__container-logo {
-         .header__container-logo {
-            max-height: 8vh;
-         }
-         .header__container-text {
+         .header__logo {
             font-family: "Cabin Sketch", cursive;
             font-size: $big-font;
+            color: $black-color;
+            text-transform: uppercase;
+            text-decoration: none;
          }
       }
    }

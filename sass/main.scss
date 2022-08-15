@@ -9,6 +9,9 @@
 // Header
 @import "./layout/header/header.scss";
 
+// Footer
+@import "./layout/footer/footer.scss";
+
 // Navigation
 @import "./layout/navigation/menu-mobile.scss";
 
@@ -18,11 +21,17 @@
 // Home
 @import "./pages/home.scss";
 
+// Cadastro
+@import "./pages/cadastro.scss";
+
 // Swiper/Banner
 @import "./layout/banner/banner.scss";
 
 // Categories
 @import "./layout/categories/categories.scss";
+
+//Promotions
+@import "./layout/promotions/promotions.scss";
 
 // Products
 @import "./layout/products/product.scss";

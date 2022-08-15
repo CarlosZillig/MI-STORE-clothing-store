@@ -1,0 +1,85 @@
+.signup {
+   text-align: center;
+
+   .signup__container {
+      margin: 2em 0;
+
+      .signup__toplogo {
+         margin-bottom: 0.3em;
+         width: 70px;
+      }
+      .signup__title {
+         color: $secondary-color;
+         font-size: 24px;
+         text-transform: uppercase;
+         font-weight: 300;
+
+         margin: 0 auto;
+         width: 75vw;
+         padding-bottom: 0.5em;
+         border-bottom: 1px solid $main-color;
+      }
+
+      .signup__form {
+         align-items: center;
+         background-color: white;
+         box-shadow: rgba(0, 0, 0, 0.35) 0 0 15px;
+         border-radius: 10px;
+         display: flex;
+         flex-direction: column;
+         justify-items: center;
+         margin: 2em auto;
+         padding: 2em 0;
+         width: 90vw;
+
+         .form__container {
+            display: flex;
+            flex-direction: column;
+            line-height: 30px;
+            padding: 0.75em 0;
+            text-align: left;
+
+            .signup__label {
+               font-weight: 300;
+            }
+
+            .signup__input {
+               border: 1px solid rgb(145, 145, 145);
+               border-radius: 5px;
+               padding: 1.5em;
+               width: 65vw;
+               &::placeholder {
+                  font-family: $main-font;
+                  font-size: 1.1em;
+                  font-weight: 300;
+               }
+            }
+
+            .form__button {
+               border: none;
+               background-color: $main-color;
+               color: white;
+               cursor: pointer;
+               margin: 0 auto;
+               width: 75vw;
+
+               &:hover {
+                  background-color: $secondary-color;
+               }
+            }
+
+            .form__text {
+               color: $secondary-color;
+               text-align: center;
+
+               .form__link {
+                  color: $link-color;
+                  &:hover {
+                     color: $hover-color;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
