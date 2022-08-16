@@ -11,7 +11,9 @@ body {
   font-size: 1.5em;
   text-align: center;
   text-decoration: none;
-  padding: 0.5em 1.25em;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 0.6em 1.25em;
 }
 .button:hover {
   border-color: #785646;
@@ -360,7 +362,6 @@ body {
 }
 .products__list .product .product__link .product__button {
   background-color: #f7b390;
-  font-size: 1.4em;
   color: black;
 }
 
@@ -371,6 +372,51 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
+}
+.view-product {
+  padding: 0 1.5em;
+}
+.view-product .view-product__container .view-product__image {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+}
+.view-product .view-product__container .view-product__image img {
+  text-align: center;
+  max-width: 100vw;
+}
+.view-product .view-product__container .view-product__content .view-product__name {
+  font-size: 1.7em;
+}
+.view-product .view-product__container .view-product__content .view-product__price {
+  padding: 0.5em 0;
+  font-size: 1.4em;
+}
+.view-product .view-product__container .view-product__form .view-product-form__content {
+  padding: 1em 0;
+}
+.view-product .view-product__container .view-product__form .view-product-form__content .view-product-form__title {
+  font-size: 1.4em;
+}
+.view-product .view-product__container .view-product__form .view-product-form__content .viewuct- .view-product-form__cep .cep__content .cep-for-displayflex {
+  display: flex;
+  font-weight: 300;
+}
+.view-product .view-product__container .view-product__form .view-product-form__content .viewuct- .view-product-form__cep .cep__content .form-cep__input {
+  width: 60%;
+  padding: 0.2em;
+  border: 1px solid black;
+  outline: none;
+  font-size: 18px;
+  color: grey;
+}
+.view-product .view-product__container .view-product__form .view-product-form__content .viewuct- .view-product-form__cep .cep__content .form-cep__button {
+  padding: 0.5em;
+}
+.view-product .view-product__container .view-product__form .view-product-form__content .viewuct- .view-product-form__cep .cep__content .form-cep__link {
+  font-size: 0.9em;
+  color: #000;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -70,60 +70,53 @@
          </header>
       </section>
 
-      <section class="signup">
-         <div class="signup__container">
-            <form action="index.html" class="signup__form">
-               <h2 class="signup__title">Cadastre-se!</h2>
-               <div class="form__container">
-                  <label for="name" class="signup__label">Nome:</label>
-                  <input type="text" id="name" class="signup__input" placeholder="Digite seu nome" />
-               </div>
+      <section class="view-product">
+         <div class="view-product__container">
+            <div class="view-product__image">
+               <img src="assets/img/product2.jpg" alt="" />
+            </div>
 
-               <div class="form__container">
-                  <label for="lastName" class="signup__label">Sobrenome</label>
-                  <input type="text" id="lastName" class="signup__input" placeholder="Digite seu sobrenome" />
-               </div>
+            <div class="view-product__content">
+               <h2 class="view-product__name">Nome do produto</h2>
+               <h2 class="view-product__price">R$39,99</h2>
+            </div>
 
-               <div class="form__container">
-                  <label for="phone" class="signup__label">Número de celular:</label>
-                  <input type="text" id="phone" class="signup__input" placeholder="(00)99999-8888" />
+            <form class="view-product__form">
+               <div class="view-product-form__content">
+                  <h3 class="view-product-form__title">Selecionar Cor</h3>
+                  <label for="color" class="view-product-form__option">Preto</label>
+                  <input type="radio" name="color" id="color-black" />
+                  <label for="color" class="view-product-form__option">Branco</label>
+                  <input type="radio" name="color" id="color-white" />
+                  <label for="color" class="view-product-form__option">Cinza</label>
+                  <input type="radio" name="color" id="color-black" />
                </div>
-
-               <div class="form__container">
-                  <label for="email" class="signup__label">Email:</label>
-                  <input type="email" id="email" class="signup__input" placeholder="seuemail@gmail.com" />
+               <div class="view-product-form__content">
+                  <label for="size" class="view-product-form__title">Tamanho:</label>
+                  <select name="size" id="cars">
+                     <option value="p">P</option>
+                     <option value="m">M</option>
+                     <option value="g">G</option>
+                     <option value="gg">GG</option>
+                  </select>
                </div>
-
-               <div class="form__container">
-                  <label for="password" class="signup__label">Senha:</label>
-                  <input type="password" id="password" class="signup__input" placeholder="Digite sua senha" />
+               <div class="view-product-form__cep">
+                  <div class="cep__content">
+                     <label for="cep" class="form-cep__title">Calcular frete:</label>
+                     <div class="cep-for-displayflex">
+                        <input type="text" class="form-cep__input" name="cep" />
+                        <button type="submit" class="form-cep__button">OK</button>
+                     </div>
+                  </div>
+                  <div class="cep__content">
+                     <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" class="form-cep__link link" target="_blank">Não sei meu CEP</a>
+                  </div>
                </div>
-
-               <div class="form__container">
-                  <label for="password" class="signup__label">Confirme sua senha:</label>
-                  <input type="password" id="password" class="signup__input" placeholder="Confirme sua senha" />
-               </div>
-
-               <div class="form__container">
-                  <p class="form__text">
-                     Já tem uma conta?
-                     <a href="./login.html" class="form__link link">Fazer Login</a>
-                  </p>
-               </div>
-
-               <div class="form__container">
-                  <button type="submit" class="button form__button">Cadastrar</button>
+               <div class="view-product-form__button">
+                  <button class="view-product__button button" type="submit">Adicionar À Sacola</button>
                </div>
             </form>
          </div>
       </section>
-
-      <section class="footer">
-         <footer class="footer__container">
-            <span class="footer__copyright">Todos os &copy; reservados à M-I Store 2022</span>
-         </footer>
-      </section>
-      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-      <script src="js/main.js"></script>
    </body>
 </html>
