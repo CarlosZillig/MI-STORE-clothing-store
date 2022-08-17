@@ -1,6 +1,6 @@
 .menu {
-   background-color: $black-color;
-   color: $light-salmon;
+   background-color: white;
+   color: black;
    padding: 2em 0;
    position: fixed;
    top: 0;
@@ -32,6 +32,10 @@
          .menu__icon--user {
             font-size: $giant-font;
             margin-bottom: 0.3em;
+         }
+         .menu__link--user {
+            color: black;
+            border-color: black;
          }
 
          .menu__list--user {

@@ -22,9 +22,11 @@ body {
 }
 
 .link {
-   color: $light-pink;
+   color: $black-color;
    text-decoration: none;
    &:hover {
       color: $hover-color;
    }
 }
+
+

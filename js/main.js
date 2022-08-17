@@ -17,3 +17,5 @@ menuLinks.forEach((item) => {
       toggleMenu(menuSection);
    });
 });
+
+

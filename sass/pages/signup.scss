@@ -1,6 +1,5 @@
 .signup {
    text-align: center;
-   height: 100vh;
    .signup__container {
       margin: 2em 0;
 
@@ -83,4 +82,8 @@
          }
       }
    }
+}
+
+.login {
+   height: 75vh;
 }

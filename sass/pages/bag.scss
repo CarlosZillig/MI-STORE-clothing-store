@@ -45,10 +45,10 @@
 
 .total-purchase {
     position: fixed;
-    top: 85%;
+    top: calc(100vh - 17%);
     left: 0;
     width: 100vw;
-    border-top: 2px solid black;
+    border-top: 1px solid grey;
     padding: 1em 0;
     .total-purchase__container {
         display: flex;

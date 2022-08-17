@@ -21,7 +21,7 @@ body {
 }
 
 .link {
-  color: #000;
+  color: #fff2f7;
   text-decoration: none;
 }
 .link:hover {
@@ -35,7 +35,6 @@ body {
   width: 100%;
   position: relative;
   z-index: 2;
-  border-bottom: 1px solid grey;
 }
 .header .header__container {
   align-items: center;
@@ -76,8 +75,8 @@ body {
 }
 
 .menu {
-  background-color: white;
-  color: black;
+  background-color: #000;
+  color: #ffdfd0;
   padding: 2em 0;
   position: fixed;
   top: 0;
@@ -107,10 +106,6 @@ body {
 .menu .menu__container-user .menu__container-user-content .menu__icon--user {
   font-size: 3em;
   margin-bottom: 0.3em;
-}
-.menu .menu__container-user .menu__container-user-content .menu__link--user {
-  color: black;
-  border-color: black;
 }
 .menu .menu__container-user .menu__container-user-content .menu__list--user {
   display: flex;
@@ -149,12 +144,14 @@ body {
   left: 0;
 }
 
-.active-header {
-  position: fixed;
+.isOpen {
+  background-color: rgba(5, 5, 5, 0.329);
+  z-index: 5;
 }
 
 .signup {
   text-align: center;
+  height: 100vh;
 }
 .signup .signup__container {
   margin: 2em 0;
@@ -202,6 +199,16 @@ body {
   width: 65vw;
   font-size: 1em;
 }
+.signup .signup__container .signup__form .form__container .signup__input::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+.signup .signup__container .signup__form .form__container .signup__input:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+}
 .signup .signup__container .signup__form .form__container .signup__input::placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 1.1em;
@@ -229,10 +236,6 @@ body {
   color: #785646;
 }
 
-.login {
-  height: 75vh;
-}
-
 .swiper {
   width: auto;
   height: auto;
@@ -244,7 +247,8 @@ body {
 }
 
 .banner__image {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .categories .categories__list {
@@ -514,10 +518,10 @@ body {
 
 .total-purchase {
   position: fixed;
-  top: calc(100vh - 17%);
+  top: 85%;
   left: 0;
   width: 100vw;
-  border-top: 1px solid grey;
+  border-top: 2px solid black;
   padding: 1em 0;
 }
 .total-purchase .total-purchase__container {
@@ -541,14 +545,4 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   color: white;
-}
-
-.product__banner {
-  max-width: 50%;
-}
-
-.product-single__pants {
-  display: flex;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

@@ -22,55 +22,62 @@
     <title>Sacola</title>
 </head>
 <body>
-    <section class="menu">
-        <div class="menu__container-close">
-           <span class="menu__icon--close" onclick="toggleMenu(menuSection)"><i class="fa-solid fa-x menu__icon"></i></span>
-        </div>
+   <section class="menu">
+      <div class="menu__container-close">
+         <span class="menu__icon--close" onclick="toggleMenu(menuSection)"><i class="fa-solid fa-x menu__icon"></i></span>
+      </div>
 
-        <div class="menu__container-user">
-           <div class="menu__container-user-content">
-              <span class="menu__icon--user"><i class="fa-solid fa-users"></i></span>
-           </div>
-           <div class="menu__container-user-content">
-              <ul>
-                 <li class="menu__list--user">
-                    <a href="./signup.html" class="menu__link--user button">Cadastre-se</a>
-                    <span class="menu__span--user">Ja tem uma conta? <a href="./login.html" class="menu__link link">Fazer login</a></span>
-                 </li>
-              </ul>
-           </div>
-        </div>
-        <div class="menu__container-title">
-           <h4 class="menu__title">Para onde vamos?</h4>
-        </div>
+      <div class="menu__container-user">
+         <div class="menu__container-user-content">
+            <span class="menu__icon--user"><i class="fa-solid fa-users"></i></span>
+         </div>
+         <div class="menu__container-user-content">
+            <ul>
+               <li class="menu__list--user">
+                  <a href="./signup.html" class="menu__link--user button">Cadastre-se</a>
+                  <span class="menu__span--user">Ja tem uma conta? <a href="./login.html" class="menu__link link">Fazer login</a></span>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <div class="menu__container-title">
+         <h4 class="menu__title">Para onde vamos?</h4>
+      </div>
 
-        <nav class="menu__mobile">
-           <ul class="menu__list">
-              <li class="menu__item">
-                 <a href="./index.html" class="menu__link link">Inicio</a>
-                 <a href="#" class="menu__link link">Produtos</a>
-                 <a href="#" class="menu__link link">Calças</a>
-                 <a href="#" class="menu__link link">Shorts</a>
-                 <a href="#" class="menu__link link">Vestidos</a>
-              </li>
-           </ul>
-        </nav>
-     </section>
-     <section class="header">
-        <header class="header__container">
-           <div class="header__container-icon">
-              <span class="header__mobile-icon" id="menu__mobile"><i class="fa-solid fa-bars"></i></span>
-           </div>
-           <div class="header__container-logo">
-              <a href="./index.html" class="link">
-                 <span class="header__logo">M-I STORE</span>
-              </a>
-           </div>
-           <div class="header__container-icon">
-              <span class="header__mobile-icon"><i class="fa-solid fa-cart-shopping"></i></span>
-           </div>
-        </header>
-     </section>
+      <nav class="menu__mobile">
+         <ul class="menu__list">
+            <li class="menu__item">
+               <a href="./index.html" class="menu__link link">Inicio</a>
+               <a href="#" class="menu__link link">Casacos</a>
+               <a href="#" class="menu__link link">Blusas</a>
+               <a href="#" class="menu__link link">Conjuntos</a>
+               <a href="#" class="menu__link link">Macacão</a>
+               <a href="#" class="menu__link link">Blazers</a>
+               <a href="#" class="menu__link link">Camisas</a>
+               <a href="#" class="menu__link link">Calças</a>
+               <a href="#" class="menu__link link">Saias</a>
+               <a href="#" class="menu__link link">Shorts</a>
+            </li>
+         </ul>
+      </nav>
+   </section>
+   <section class="header">
+      <header class="header__container">
+         <div class="header__container-icon">
+            <span class="header__mobile-icon" id="menu__mobile"><i class="fa-solid fa-bars"></i></span>
+         </div>
+         <div class="header__container-logo">
+            <a href="./index.html" class="link">
+               <span class="header__logo">M-I STORE</span>
+            </a>
+         </div>
+         <div class="header__container-icon">
+            <a href="bag.html">
+               <span class="header__mobile-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+            </a>
+         </div>
+      </header>
+   </section>
 
     <section class="bag">
         <div class="bag__container">
@@ -93,12 +100,15 @@
 
     <section class="total-purchase">
         <div class="total-purchase__container">
-            <span class="total-purchase__credit">10x de 45,75</span>
+            <span class="total-purchase__credit">10x de <span>45,75</span> sem juros!</span>
             <span class="total-purchase__total">Total: R$<span>450</span></span>
         </div>
         <div class="total-purchase-container__buy">
             <button class="total-purchase__buy">Ir para o pagamento</button>
         </div>
     </section>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/swiper.js"></script>
 </body>
 </html>
