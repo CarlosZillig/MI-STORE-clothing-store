@@ -5,12 +5,12 @@
    align-items: center;
    margin-top: 1.5em;
    height: 10vh;
-   background-color: black;
+   background-color: $black-color;
    text-align: center;
 
    .footer__container {
       .footer__copyright {
-         color: $main-color;
+         color: white;
       }
    }
 }

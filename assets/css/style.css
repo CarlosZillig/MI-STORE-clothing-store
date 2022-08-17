@@ -33,11 +33,12 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 .header .header__container {
   align-items: center;
   background-color: white;
-  border-bottom: 2px solid #000;
   color: #000;
   display: flex;
   height: 10vh;
@@ -48,8 +49,8 @@ body {
   font-size: 1.7em;
   padding: 1em;
 }
-.header .header__container .header__container-icon #menu__mobile {
-  cursor: pointer;
+.header .header__container .header__container-icon .header__mobile-icon {
+  color: black;
 }
 .header .header__container .header__container-logo .header__logo {
   font-family: "Cabin Sketch", cursive;
@@ -66,11 +67,11 @@ body {
   align-items: center;
   margin-top: 1.5em;
   height: 10vh;
-  background-color: black;
+  background-color: #000;
   text-align: center;
 }
 .footer .footer__container .footer__copyright {
-  color: #f7b390;
+  color: white;
 }
 
 .menu {
@@ -80,7 +81,7 @@ body {
   position: fixed;
   top: 0;
   left: -500px;
-  z-index: 2;
+  z-index: 3;
   height: 100vh;
   width: 100vw;
   transition: 0.7s all ease-out;
@@ -150,6 +151,7 @@ body {
 
 .signup {
   text-align: center;
+  height: 100vh;
 }
 .signup .signup__container {
   margin: 2em 0;
@@ -193,8 +195,9 @@ body {
 .signup .signup__container .signup__form .form__container .signup__input {
   border: 1px solid rgb(145, 145, 145);
   border-radius: 5px;
-  padding: 1.5em;
+  padding: 1em;
   width: 65vw;
+  font-size: 1em;
 }
 .signup .signup__container .signup__form .form__container .signup__input::placeholder {
   font-family: "Roboto", sans-serif;
@@ -391,32 +394,146 @@ body {
 .view-product .view-product__container .view-product__content .view-product__price {
   padding: 0.5em 0;
   font-size: 1.4em;
+  font-weight: 600;
 }
 .view-product .view-product__container .view-product__form .view-product-form__content {
   padding: 1em 0;
 }
+.view-product .view-product__container .view-product__form .view-product-form__content .view-product-form__option {
+  padding: 0.5em 1.2em;
+  margin-right: 0.5em;
+  border-radius: 100%;
+}
+.view-product .view-product__container .view-product__form .view-product-form__content .view-product-form__option:hover {
+  border: 2px solid grey;
+  transform: scale(1.05em);
+}
+.view-product .view-product__container .view-product__form .view-product-form__content .view-product-form__option-black {
+  background-color: black;
+}
+.view-product .view-product__container .view-product__form .view-product-form__content .view-product-form__option-white {
+  background-color: rgb(185, 184, 184);
+}
+.view-product .view-product__container .view-product__form .view-product-form__content .view-product-form__option-blue {
+  background-color: blue;
+}
+.view-product .view-product__container .view-product__form .view-product-form__content input[type=radio] {
+  display: none;
+}
 .view-product .view-product__container .view-product__form .view-product-form__content .view-product-form__title {
   font-size: 1.4em;
+  padding: 1em 0.5em 0.8em 0;
 }
-.view-product .view-product__container .view-product__form .view-product-form__content .viewuct- .view-product-form__cep .cep__content .cep-for-displayflex {
+.view-product .view-product__container .view-product__form .view-product-form__content select {
+  width: 60px;
+  height: 30px;
+  font-size: 16px;
+}
+.view-product .view-product__container .view-product__form .view-product-form__cep .cep-for-displayflex {
   display: flex;
   font-weight: 300;
+  padding: 0.5em 0;
 }
-.view-product .view-product__container .view-product__form .view-product-form__content .viewuct- .view-product-form__cep .cep__content .form-cep__input {
+.view-product .view-product__container .view-product__form .view-product-form__cep .cep-for-displayflex .form-cep__input {
   width: 60%;
-  padding: 0.2em;
-  border: 1px solid black;
+  padding: 0.2em 0.5em;
+  border: 1px solid grey;
   outline: none;
   font-size: 18px;
   color: grey;
 }
-.view-product .view-product__container .view-product__form .view-product-form__content .viewuct- .view-product-form__cep .cep__content .form-cep__button {
+.view-product .view-product__container .view-product__form .view-product-form__cep .cep-for-displayflex .form-cep__button {
   padding: 0.5em;
 }
-.view-product .view-product__container .view-product__form .view-product-form__content .viewuct- .view-product-form__cep .cep__content .form-cep__link {
+.view-product .view-product__container .view-product__form .view-product-form__cep .cep-for-displayflex .form-cep__link {
   font-size: 0.9em;
   color: #000;
   text-decoration: underline;
+}
+.view-product .view-product__container .view-product__form .view-product-form__button {
+  text-align: center;
+  padding: 0 0 1em 0;
+}
+.view-product .view-product__container .view-product__form .view-product-form__button .view-product__button {
+  background-color: green;
+}
+
+.bag {
+  padding: 1.5em;
+  position: relative;
+}
+.bag .bag__container {
+  display: flex;
+}
+.bag .bag__container .bag__container-product {
+  padding: 0 1em;
+}
+.bag .bag__container .bag__container-product img {
+  width: 80px;
+  height: 100px;
+}
+.bag .bag__container .bag__container-product .bag-container-product__name {
+  font-weight: 300;
+}
+.bag .bag__container .bag__container-product .bag__container-specifications {
+  display: flex;
+  gap: 10px;
+  padding: 1em 0;
+}
+.bag .bag__container .bag__container-product .bag__container-specifications .bag-container-product__size, .bag .bag__container .bag__container-product .bag__container-specifications .bag-container-product__color {
+  color: grey;
+}
+.bag .bag__container .bag__container-product .bag__container-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bag .bag__container .bag__container-product .bag__container-price .bag-container-product__quantity {
+  width: 10%;
+  text-align: center;
+}
+.bag .bag__container .bag__container-product .bag__container-price .bag-container-product__price {
+  font-weight: 500;
+}
+.bag .bag__container::before {
+  content: "X";
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  background-color: rgb(214, 88, 88);
+  padding: 0.2em 0.4em;
+  color: white;
+}
+
+.total-purchase {
+  position: fixed;
+  top: 85%;
+  left: 0;
+  width: 100vw;
+  border-top: 2px solid black;
+  padding: 1em 0;
+}
+.total-purchase .total-purchase__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+.total-purchase .total-purchase-container__buy {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+.total-purchase .total-purchase-container__buy .total-purchase__buy {
+  text-align: center;
+  width: 100vw;
+  padding: 0.7em;
+  background-color: rgb(3, 165, 3);
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,77 @@
+.bag {
+    padding: 1.5em;
+    position: relative;
+    .bag__container {
+        display: flex;
+        .bag__container-product {
+            padding: 0 1em;
+            img {
+                width: 80px;
+                height: 100px;
+            }
+            .bag-container-product__name {
+                font-weight: 300;
+            }
+            .bag__container-specifications {
+                display: flex;
+                gap: 10px;
+                padding: 1em 0;
+                .bag-container-product__size, .bag-container-product__color {color: grey;}
+            }
+            .bag__container-price {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .bag-container-product__quantity {
+                    width: 10%;
+                    text-align: center;
+                }
+                .bag-container-product__price {
+                    font-weight: 500;
+                }
+            }
+        }
+        &::before {
+            content: "X";
+            position: absolute;
+            top: 10%;
+            left: 90%;
+            background-color: rgb(214, 88, 88);
+            padding: 0.2em 0.4em;
+            color: white;
+        }
+    }
+}
+
+.total-purchase {
+    position: fixed;
+    top: 85%;
+    left: 0;
+    width: 100vw;
+    border-top: 2px solid black;
+    padding: 1em 0;
+    .total-purchase__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1em;
+    }
+    .total-purchase-container__buy {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+        .total-purchase__buy {
+            text-align: center;
+            width: 100vw;
+            padding: 0.7em;
+
+            background-color: rgb(3, 165, 3);
+            outline: none;
+            border: none;
+            border-radius: 8px;
+
+            font-size: 18px;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+}

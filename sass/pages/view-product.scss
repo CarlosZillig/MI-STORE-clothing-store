@@ -19,40 +19,68 @@
          .view-product__price {
             padding: 0.5em 0;
             font-size: $medium-font;
+            font-weight: 600;
          }
       }
 
       .view-product__form {
          .view-product-form__content {
             padding: 1em 0;
+            .view-product-form__option {
+              padding: 0.5em 1.2em;
+              margin-right: 0.5em;
+              border-radius: 100%;
+              &:hover {
+               border: 2px solid grey;
+               transform: scale(1.05em);
+              }
+            }
+            .view-product-form__option-black{background-color: black;}
+            .view-product-form__option-white{background-color: rgb(185, 184, 184);}
+            .view-product-form__option-blue{background-color: blue;}
+            input[type=radio] {
+               display: none;
+            }
             .view-product-form__title {
                font-size: $medium-font;
+               padding: 1em 0.5em 0.8em 0;
             }
-            .viewuct- .view-product-form__cep {
-               .cep__content {
-                  .cep-for-displayflex {
-                     display: flex;
-                     font-weight: 300;
-                  }
-                  .form-cep__input {
-                     width: 60%;
-                     padding: 0.2em;
-                     border: 1px solid black;
-                     outline: none;
+            select {
+               width: 60px;
+               height: 30px;
+               font-size: 16px;
+            }
+         }               
+         .view-product-form__cep {
+            .cep-for-displayflex {
+               display: flex;
+               font-weight: 300;
+               padding: 0.5em 0;
+               .form-cep__input {
+                  width: 60%;
+                  padding: 0.2em 0.5em;
+                  border: 1px solid grey;
+                  outline: none;
 
-                     font-size: 18px;
-                     color: grey;
-                  }
-                  .form-cep__button {
-                     padding: 0.5em;
-                  }
-
-                  .form-cep__link {
-                     font-size: $small-font;
-                     color: $black-color;
-                     text-decoration: underline;
-                  }
+                  font-size: 18px;
+                  color: grey;
                }
+               .form-cep__button {
+                  padding: 0.5em;
+               }          
+         
+               .form-cep__link {
+                  font-size: $small-font;
+                  color: $black-color;
+                  text-decoration: underline;
+               }
+            }
+         }
+         .view-product-form__button {
+            text-align: center;
+            padding: 0 0 1em 0;
+            .view-product__button {
+               background-color: green;
             }
          }
       }

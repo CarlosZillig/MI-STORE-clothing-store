@@ -16,7 +16,7 @@
       <!-- CSS -->
       <link rel="stylesheet" href="assets/css/style.css" />
 
-      <title>M-I Store | Cadastro</title>
+      <title>Produtos</title>
    </head>
    <body>
       <section class="menu">
@@ -31,7 +31,7 @@
             <div class="menu__container-user-content">
                <ul>
                   <li class="menu__list--user">
-                     <a href="./cadastro.html" class="menu__link--user button">Cadastre-se</a>
+                     <a href="./signup.html" class="menu__link--user button">Cadastre-se</a>
                      <span class="menu__span--user">Ja tem uma conta? <a href="./login.html" class="menu__link link">Fazer login</a></span>
                   </li>
                </ul>
@@ -83,28 +83,33 @@
 
             <form class="view-product__form">
                <div class="view-product-form__content">
-                  <h3 class="view-product-form__title">Selecionar Cor</h3>
-                  <label for="color" class="view-product-form__option">Preto</label>
+                  <h3 class="view-product-form__title">Selecionar cor:</h3>
+                  <label for="color" class="view-product-form__option view-product-form__option-black"></label>
                   <input type="radio" name="color" id="color-black" />
-                  <label for="color" class="view-product-form__option">Branco</label>
+                  <label for="color" class="view-product-form__option view-product-form__option-white"></label>
                   <input type="radio" name="color" id="color-white" />
-                  <label for="color" class="view-product-form__option">Cinza</label>
-                  <input type="radio" name="color" id="color-black" />
+                  <label for="color" class="view-product-form__option view-product-form__option-blue"></label>
+                  <input type="radio" name="color" id="color-blue" />
                </div>
+
+               <div>
+                  <span class="view-product__color-select">Cor selecionada: <span>PRETO</span></span>
+               </div>
+              
                <div class="view-product-form__content">
                   <label for="size" class="view-product-form__title">Tamanho:</label>
-                  <select name="size" id="cars">
-                     <option value="p">P</option>
-                     <option value="m">M</option>
-                     <option value="g">G</option>
-                     <option value="gg">GG</option>
+                  <select name="size" id="size">
+                     <option value="p" class="view-product-form__option">P</option>
+                     <option value="m" class="view-product-form__option">M</option>
+                     <option value="g" class="view-product-form__option">G</option>
+                     <option value="gg" class="view-product-form__option">GG</option>
                   </select>
                </div>
                <div class="view-product-form__cep">
                   <div class="cep__content">
                      <label for="cep" class="form-cep__title">Calcular frete:</label>
                      <div class="cep-for-displayflex">
-                        <input type="text" class="form-cep__input" name="cep" />
+                        <input type="number" class="form-cep__input" name="cep" />
                         <button type="submit" class="form-cep__button">OK</button>
                      </div>
                   </div>

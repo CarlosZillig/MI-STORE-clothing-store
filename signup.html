@@ -76,32 +76,33 @@
                <h2 class="signup__title">Cadastre-se!</h2>
                <div class="form__container">
                   <label for="name" class="signup__label">Nome:</label>
-                  <input type="text" id="name" class="signup__input" placeholder="Digite seu nome" />
+                  <input type="text" id="name" class="signup__input" placeholder="Digite seu nome" 
+                  pattern="[A-Za-z]+" required/>
                </div>
 
                <div class="form__container">
                   <label for="lastName" class="signup__label">Sobrenome</label>
-                  <input type="text" id="lastName" class="signup__input" placeholder="Digite seu sobrenome" />
+                  <input type="text" id="lastName" class="signup__input" placeholder="Digite seu sobrenome" pattern="[A-Za-z]+" required/>
                </div>
 
                <div class="form__container">
                   <label for="phone" class="signup__label">Número de celular:</label>
-                  <input type="text" id="phone" class="signup__input" placeholder="(00)99999-8888" />
+                  <input type="tel" id="phone" class="signup__input" placeholder="00 99999-8888" pattern="[0-9]{10,}" title="Insira um numero válido" required/>
                </div>
 
                <div class="form__container">
                   <label for="email" class="signup__label">Email:</label>
-                  <input type="email" id="email" class="signup__input" placeholder="seuemail@gmail.com" />
+                  <input type="email" id="email" class="signup__input" placeholder="seuemail@gmail.com" required/>
                </div>
 
                <div class="form__container">
                   <label for="password" class="signup__label">Senha:</label>
-                  <input type="password" id="password" class="signup__input" placeholder="Digite sua senha" />
+                  <input type="password" id="password" class="signup__input" placeholder="Digite sua senha" pattern="[a-zA-Z0-9]{3,}" title="Minimo 3 caracteres" required/>
                </div>
 
                <div class="form__container">
                   <label for="password" class="signup__label">Confirme sua senha:</label>
-                  <input type="password" id="password" class="signup__input" placeholder="Confirme sua senha" />
+                  <input type="password" id="password" class="signup__input" placeholder="Confirme sua senha" required/>
                </div>
 
                <div class="form__container">

@@ -3,11 +3,11 @@
    display: flex;
    justify-content: space-between;
    width: 100%;
-
+   position: relative;
+   z-index: 2;
    .header__container {
       align-items: center;
       background-color: white;
-      border-bottom: 2px solid $black-color;
       color: $black-color;
       display: flex;
       height: 10vh;
@@ -17,9 +17,8 @@
       .header__container-icon {
          font-size: $big-font;
          padding: 1em;
-
-         #menu__mobile {
-            cursor: pointer;
+         .header__mobile-icon {
+            color: black;
          }
       }
 

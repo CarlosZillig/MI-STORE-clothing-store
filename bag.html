@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+
+    <!-- Cabin Sketch -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet" />
+
+    <!--Font awsome-->
+    <script src="https://kit.fontawesome.com/7df7c09821.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!--Swiper js-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <title>Sacola</title>
+</head>
+<body>
+    <section class="menu">
+        <div class="menu__container-close">
+           <span class="menu__icon--close" onclick="toggleMenu(menuSection)"><i class="fa-solid fa-x menu__icon"></i></span>
+        </div>
+
+        <div class="menu__container-user">
+           <div class="menu__container-user-content">
+              <span class="menu__icon--user"><i class="fa-solid fa-users"></i></span>
+           </div>
+           <div class="menu__container-user-content">
+              <ul>
+                 <li class="menu__list--user">
+                    <a href="./signup.html" class="menu__link--user button">Cadastre-se</a>
+                    <span class="menu__span--user">Ja tem uma conta? <a href="./login.html" class="menu__link link">Fazer login</a></span>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        <div class="menu__container-title">
+           <h4 class="menu__title">Para onde vamos?</h4>
+        </div>
+
+        <nav class="menu__mobile">
+           <ul class="menu__list">
+              <li class="menu__item">
+                 <a href="./index.html" class="menu__link link">Inicio</a>
+                 <a href="#" class="menu__link link">Produtos</a>
+                 <a href="#" class="menu__link link">Calças</a>
+                 <a href="#" class="menu__link link">Shorts</a>
+                 <a href="#" class="menu__link link">Vestidos</a>
+              </li>
+           </ul>
+        </nav>
+     </section>
+     <section class="header">
+        <header class="header__container">
+           <div class="header__container-icon">
+              <span class="header__mobile-icon" id="menu__mobile"><i class="fa-solid fa-bars"></i></span>
+           </div>
+           <div class="header__container-logo">
+              <a href="./index.html" class="link">
+                 <span class="header__logo">M-I STORE</span>
+              </a>
+           </div>
+           <div class="header__container-icon">
+              <span class="header__mobile-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+           </div>
+        </header>
+     </section>
+
+    <section class="bag">
+        <div class="bag__container">
+            <div class="bag__container-product">
+                <img src="assets/img/product3.jpg" alt="#" class="bag-container-product__image">
+            </div>
+            <div class="bag__container-product">
+                <p class="bag-container-product__name">Macacão preto da nike</p>
+                <div class="bag__container-specifications">
+                    <p class="bag-container-product__size">Tamanho: <span>M</span></p>
+                    <p class="bag-container-product__color">Cor: <span>Preto</span></p>
+                </div>
+                <div class="bag__container-price">
+                    <input type="tel" value="1" class="bag-container-product__quantity">
+                    <span class="bag-container-product__price">R$199,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="total-purchase">
+        <div class="total-purchase__container">
+            <span class="total-purchase__credit">10x de 45,75</span>
+            <span class="total-purchase__total">Total: R$<span>450</span></span>
+        </div>
+        <div class="total-purchase-container__buy">
+            <button class="total-purchase__buy">Ir para o pagamento</button>
+        </div>
+    </section>
+</body>
+</html>
