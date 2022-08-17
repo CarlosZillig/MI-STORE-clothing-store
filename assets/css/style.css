@@ -142,7 +142,37 @@ body {
   .menu {
     left: -1024px;
     width: 50vw;
+    height: 100vh;
     transition: 0.6s all ease-out;
+  }
+  .menu .menu__container-user .menu__container-user-content .menu__icon--user {
+    font-size: 3em;
+  }
+  .menu .menu__container-user .menu__container-user-content .menu__link--user:hover {
+    color: #b8846a;
+    border-color: #785646;
+    transform: scale(105%);
+  }
+  .menu .menu__mobile .menu__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .menu .menu__mobile .menu__item .menu__link {
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    transition: 0.2s all ease-in-out;
+    height: 50px;
+    width: 200px;
+  }
+  .menu .menu__mobile .menu__item .menu__link:hover {
+    border-color: #785646;
+    transform: scale(105%);
   }
 }
 .active-menu {
@@ -544,11 +574,60 @@ body {
 }
 
 .product__banner {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .product-single__pants {
   display: flex;
+}
+
+.form-add {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+}
+.form-add .form-add__container {
+  background-color: rgb(219, 208, 208);
+  border-radius: 10px;
+  padding: 1em;
+  width: 80%;
+}
+.form-add .form-add__container .form {
+  padding: 2em 0;
+}
+.form-add .form-add__container .form .form__item {
+  padding: 1em 0;
+}
+.form-add .form-add__container .form .form__item label {
+  display: block;
+  font-size: 19px;
+  padding-bottom: 0.5em;
+}
+.form-add .form-add__container .form .form__item input {
+  padding: 0.5em 1em;
+}
+.form-add .form-add__container .form .form__item .input-file {
+  font-size: 15px;
+  max-width: 100vw;
+}
+.form-add .form-add__container h2 {
+  font-size: 19px;
+  padding-bottom: 0.5em;
+}
+.form-add .form-add__container select {
+  font-size: 18px;
+}
+.form-add .form-add__container select option {
+  font-size: 14px;
+}
+.form-add .form-add__container .form-add__button {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 20px;
+  color: white;
+  background-color: green;
+  border: none;
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */

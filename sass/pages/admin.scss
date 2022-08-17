@@ -1,0 +1,51 @@
+.form-add {
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+    .form-add__container {
+        background-color: rgb(219, 208, 208);
+        border-radius: 10px;
+        padding: 1em;
+        width: 80%;
+        .form {
+            padding: 2em 0;
+            .form__item {
+                padding: 1em 0;
+                label {
+                    display: block;
+                    font-size: 19px;
+                    padding-bottom: 0.5em;
+                }
+                input {
+                    padding: 0.5em 1em;
+                }
+                .input-file {
+                    font-size: 15px;
+                    max-width: 100vw;
+                }
+            }
+        }
+        h2 {
+            font-size: 19px;
+            padding-bottom: 0.5em;
+        }
+
+        select {
+            font-size: 18px;
+            option {
+                font-size: 14px;
+            }
+        }
+        .form-add__button {
+            width: 100%;
+            padding: 0.5em;
+            font-size: 20px;
+            color: white;
+            background-color: green;
+
+            border: none;
+            outline: none;
+        }
+    }
+}
+

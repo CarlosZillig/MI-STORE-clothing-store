@@ -76,7 +76,52 @@
    .menu {
       left: -1024px;
       width: 50vw;
+      height: 100vh;
 
       transition: 0.6s all ease-out;
+
+      .menu__container-user {
+   
+         .menu__container-user-content {
+            .menu__icon--user {
+               font-size: $giant-font;
+            }
+            .menu__link--user {
+               &:hover {
+                  color: $link-color;
+                  border-color: $hover-color;
+                  transform: scale(105%);
+               }
+            }
+         }
+      }
+      
+      .menu__mobile {
+   
+         .menu__item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+            align-items: center;
+            justify-items: center;
+   
+            .menu__link {
+               align-items: center;
+               border: 1px solid black;
+               border-radius: 5px;
+               display: flex;
+               font-size: 20px;
+               justify-content: center;
+               transition: 0.2s all ease-in-out;
+
+               height: 50px;
+               width: 200px;
+               &:hover {
+                  border-color: $hover-color;
+                  transform: scale(105%);
+               }
+            }
+         }
+      }
    }
 }
