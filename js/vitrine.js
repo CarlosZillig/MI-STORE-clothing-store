@@ -13,16 +13,23 @@ const produtos = [
       title: "Vestido Cinza",
       img: "/assets/img/product2.jpg",
       quantidade: 0,
-   }
+   },
 ];
 
 productAdd = () => {
    produtos.forEach((item) => {
-      productList.innerHTML += `
+      productList.innerHTML +=
+         `
         <div class="product-single">
-            <img class="product__banner product__banner--4" src="`+item.img +`"/>
-            <p class="product__title">` + item.title +`</p>
-            <a key="`+item.id+`" href="#" class="btn">Adicionar ao carrinho</a>
+            <img class="product__banner product__banner--4" src="` +
+         item.img +
+         `"/>
+            <p class="product__title">` +
+         item.title +
+         `</p>
+            <a key="` +
+         item.id +
+         `" href="#" class="btn">Adicionar ao carrinho</a>
         </div>
         `;
    });
@@ -47,8 +54,12 @@ function atualizarCarrinho() {
    produtos.forEach((item) => {
       containerCarrinho.innerHTML +=
          `
-         <p>`+item.title +`</p> <br>
-         <p>`+item.quantidade +`</p>
-        `
+         <p>` +
+         item.title +
+         `</p> <br>
+         <p>` +
+         item.quantidade +
+         `</p>
+        `;
    });
-};
+}

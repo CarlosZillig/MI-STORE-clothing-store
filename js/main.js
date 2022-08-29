@@ -1,7 +1,6 @@
 const btnMenu = document.querySelector("#menu__mobile");
 const menuSection = document.querySelector(".menu");
 const menuLinks = document.querySelectorAll(".menu__link");
-const body = document.body;
 
 btnMenu.addEventListener("click", () => {
    toggleMenu(menuSection);
@@ -17,5 +16,3 @@ menuLinks.forEach((item) => {
       toggleMenu(menuSection);
    });
 });
-
-

@@ -4,7 +4,7 @@
    padding: 2em 0;
    position: fixed;
    top: 0;
-   left: -500px;
+   left: -9999px;
    z-index: 3;
    height: 100vh;
    width: 100vw;
@@ -81,7 +81,6 @@
       transition: 0.6s all ease-out;
 
       .menu__container-user {
-   
          .menu__container-user-content {
             .menu__icon--user {
                font-size: $giant-font;
@@ -95,16 +94,15 @@
             }
          }
       }
-      
+
       .menu__mobile {
-   
          .menu__item {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            
+
             align-items: center;
             justify-items: center;
-   
+
             .menu__link {
                align-items: center;
                border: 1px solid black;
