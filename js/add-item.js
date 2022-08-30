@@ -1,18 +1,8 @@
-const produtosLista = document.querySelector(".products__list");
+const produtosLista = document.querySelector(".list");
 const inputTitle = document.querySelector("#title");
 const inputImage = document.querySelector("#image");
 const inputPrice = document.querySelector("#price");
 const btnAdd = document.querySelector("#btnAdd")
-
-class Produtos {
-    constructor(title, img, price) {
-        this.title = title
-        this.img = img
-        this.price = price
-    }
-}
-
-
 
 function addItem(title, img, price) {
     const produto = new Produtos(title, img, price);

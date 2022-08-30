@@ -16,9 +16,10 @@
       width: 100%;
 
       .header__container-icon {
-         font-size: $big-font;
          padding: 1em;
+         
          .header__mobile-icon {
+            font-size: 40px;
             color: black;
          }
       }

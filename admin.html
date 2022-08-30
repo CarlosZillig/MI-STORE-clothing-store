@@ -34,10 +34,10 @@
                <option value="Camisas">Camisas</option>
                <option value="Shorts">Shorts</option>
             </select>
-            <form action="" class="form">
+            <form onsubmit="" class="form">
                <div class="form__item">
                   <label for="image">Adicione a imagem do produto:</label>
-                  <input type="file" id="image" name="image" required class="input-file" />
+                  <input type="file" id="imgProduct" name="image" required class="input-file" />
                </div>
                <div class="form__item">
                   <label for="title">Adicione o titulo do produto:</label>
@@ -47,13 +47,11 @@
                   <label for="price">Adicione o preço do produto:</label>
                   <input type="number" id="price" name="price" required />
                </div>
+               <button type="submit" class="form-add__button" id="btnAdd" style="cursor: pointer">Adicionar</button>
             </form>
-            <button type="submit" class="form-add__button" id="btnAdd">Adicionar</button>
          </div>
       </section>
-      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-      <script src="js/main.js"></script>
-      <script src="js/header.js"></script>
-      <script src="js/swiper.js"></script>
+      <script src="js/product.js"></script>
+      <script src="js/adminTest.js"></script>
    </body>
 </html>

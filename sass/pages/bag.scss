@@ -31,15 +31,6 @@
                 }
             }
         }
-        &::before {
-            content: "X";
-            position: absolute;
-            top: 10%;
-            left: 90%;
-            background-color: rgb(214, 88, 88);
-            padding: 0.2em 0.4em;
-            color: white;
-        }
     }
 }
 
@@ -72,6 +63,92 @@
             font-size: 18px;
             text-transform: uppercase;
             color: white;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bag__container {
+        .bag__container-product {
+            img {
+                width: 100%;
+                height: 150px;
+            }
+            .bag-container-product__name {
+                font-size: 1.5em;
+            }
+            .bag__container-specifications, .bag__container-price {
+                font-size: 1.3em;
+            }
+        }
+    }
+    .total-purchase {
+        position: fixed;
+        top: calc(100vh - 17%);
+        left: 0;
+        width: 100vw;
+        border-top: 1px solid grey;
+        padding: 1em 0;
+        .total-purchase__container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1em;
+        }
+        .total-purchase-container__buy {
+            display: flex;
+            justify-content: center;
+            padding: 1em;
+            .total-purchase__buy {
+                text-align: center;
+                width: 100vw;
+                padding: 0.7em;
+
+                background-color: rgb(3, 165, 3);
+                outline: none;
+                border: none;
+                border-radius: 8px;
+
+                font-size: 18px;
+                text-transform: uppercase;
+                color: white;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .bag__container {
+        width: 40vw;
+        .bag__container-product {
+            img {
+                width: 100%;
+                height: 300px;
+            }
+            .bag-container-product__name {
+                font-size: 1.2em;
+            }
+            .bag__container-specifications, .bag__container-price {
+                font-size: 1em;
+            }
+        }
+    }
+    .total-purchase {
+        position: fixed;
+        top: 10vh;
+        left: 60vw;
+        width: 20vw;
+        height: 100vh;
+        border-left: 1px solid grey;
+        padding: 1em 0;
+        .total-purchase__container {
+            flex-direction: column;
+        }
+        .total-purchase-container__buy {
+            flex-direction: column;
+            .total-purchase__buy {
+                width: 20vw;
+                padding: 0.5em
+            }
         }
     }
 }
