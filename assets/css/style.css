@@ -542,26 +542,21 @@ body {
 }
 
 .total-purchase {
-  position: fixed;
-  top: calc(100vh - 17%);
-  left: 0;
   width: 100vw;
   border-top: 1px solid grey;
   padding: 1em 0;
 }
 .total-purchase .total-purchase__container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 0 1em;
 }
-.total-purchase .total-purchase-container__buy {
+.total-purchase .buy__mobile {
   display: flex;
-  justify-content: center;
-  padding: 1em;
+  justify-content: space-between;
 }
 .total-purchase .total-purchase-container__buy .total-purchase__buy {
   text-align: center;
-  width: 100vw;
   padding: 0.7em;
   background-color: rgb(3, 165, 3);
   outline: none;
@@ -605,16 +600,16 @@ body {
     text-align: center;
     width: 100vw;
     padding: 0.7em;
-    background-color: rgb(3, 165, 3);
+    background-color: #ffcbe0;
     outline: none;
     border: none;
     border-radius: 8px;
     font-size: 18px;
     text-transform: uppercase;
-    color: white;
+    color: black;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
   .bag__container {
     width: 40vw;
   }
@@ -631,21 +626,70 @@ body {
   .total-purchase {
     position: fixed;
     top: 10vh;
-    left: 60vw;
-    width: 20vw;
+    left: 70vw;
+    width: 25vw;
     height: 100vh;
     border-left: 1px solid grey;
     padding: 1em 0;
   }
   .total-purchase .total-purchase__container {
     flex-direction: column;
+    width: 100%;
+  }
+  .total-purchase .total-purchase__container .total-purchase__coupon {
+    padding: 1em 0;
+  }
+  .total-purchase .total-purchase__container .total-purchase__coupon .total-purchase__coupon--container {
+    display: flex;
+    padding: 0.7em 0;
+  }
+  .total-purchase .total-purchase__container .total-purchase__coupon .total-purchase__coupon--container .total-purchase__input {
+    border: none;
+    border-bottom: 2px solid #ffcbe0;
+    outline: none;
+  }
+  .total-purchase .total-purchase__container .total-purchase__coupon .total-purchase__coupon--container .total-purchase__btn--coupon {
+    padding: 0.5em 1em;
+    background-color: #ffcbe0;
+    border: none;
+  }
+  .total-purchase .total-purchase__container .total-purchase__coupon .total-purchase__coupon--title {
+    font-size: 0.7em;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .total-purchase .total-purchase__specifications {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5em 0;
+    font-size: 0.9em;
+    font-weight: 300;
   }
   .total-purchase .total-purchase-container__buy {
-    flex-direction: column;
+    padding: 0 0 0.5em 0;
   }
   .total-purchase .total-purchase-container__buy .total-purchase__buy {
-    width: 20vw;
-    padding: 0.5em;
+    font-size: 0.9em;
+    font-weight: 300;
+    width: 100%;
+    border-radius: 0;
+    cursor: pointer;
+  }
+  .total-purchase .total-purchase-container__buy .continue {
+    background-color: transparent;
+    border: 2px solid #ffcbe0;
+    text-decoration: none;
+    padding: 0.5em 0;
+  }
+  .total-purchase .total-purchase__parcel {
+    text-align: end;
+    font-size: 0.7em;
+    font-weight: 300;
+    padding-bottom: 1em;
+  }
+  .total-purchase .buy__mobile {
+    flex-direction: column;
   }
 }
 .product__banner {

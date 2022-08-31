@@ -106,11 +106,36 @@
 
     <section class="total-purchase">
         <div class="total-purchase__container">
-            <span class="total-purchase__credit">10x de <span>45,75</span> sem juros!</span>
-            <span class="total-purchase__total">Total: R$<span>450</span></span>
-        </div>
-        <div class="total-purchase-container__buy">
-            <button class="total-purchase__buy">Ir para o pagamento</button>
+            <div class="total-purchase__coupon">
+               <h3 class="total-purchase__coupon--title">Cupom de desconto</h3>
+               <div class="total-purchase__coupon--container">
+                  <input type="text" class="total-purchase__input" placeholder="Digite o cupom aqui">
+                  <button type="submit" class="total-purchase__btn--coupon">OK</button>
+               </div>
+            </div>
+            <div class="total-purchase__specifications">
+               <span class="total-purchase__subtotal">SUBTOTAL:</span>
+               <span class="total-purchase__subtotal--price">R$<span>450</span></span>
+            </div>
+            <div class="total-purchase__specifications">
+               <span class="total-purchase__discounts">DESCONTOS:</span>
+               <span class="total-purchase__discounts--price">R$<span>0</span></span>
+            </div>
+            <div class="total-purchase__specifications">
+               <span class="total-purchase__total">TOTAL:</span>
+               <span class="total-purchase__total--price">R$<span>0</span></span>
+            </div>
+            <div class="total-purchase__parcel">
+               <span class="total-purchase__total--price">10x de R$<span>92,91</span> sem juros!</span>
+            </div>
+            <div class="buy__mobile">
+               <div class="total-purchase-container__buy">
+                  <button class="total-purchase__buy">Finalizar compra</button>
+               </div>
+               <div class="total-purchase-container__buy">
+                  <a href="index.html" class="total-purchase__buy continue">Continuar comprando</a>
+               </div>
+            </div>
         </div>
     </section>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
