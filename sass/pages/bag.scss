@@ -65,7 +65,7 @@
                 width: 100%;
                 padding: 0.5em 0;
                 .total-purchase__buy {
-                    padding: 0.7em;
+                    padding: 0.7em 0;
                     width: 100%;
                     background-color: $third-color;
                     outline: none;
@@ -74,6 +74,11 @@
                     font-size: 18px;
                     text-transform: uppercase;
                     color: white;
+                    cursor: pointer;
+                    transition: .5s;
+                    &:hover {
+                        background-color: pink;
+                    }
                 }
                 .continue {
                     background-color: transparent;
@@ -97,19 +102,23 @@
             .total-purchase__coupon--container {
                 display: flex;
                 .total-purchase__input {
-                    padding: 0.7em 1.2em;
+                    padding: 0.7em 0;
                     border: none;
                     border-bottom: 2px solid $third-color;
                     outline: none;
                 }
                 .total-purchase__btn--coupon {
                     border: 2px solid $third-color;
+                    background-color: transparent;
+                    transition: .5s;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: pink;
+                    }
                 }
             }
         }
     }
-
-    
 }
 
 @media screen and (min-width: 1024px) {
@@ -184,6 +193,7 @@
         width: 25vw;
         height: 100vh;
         border-left: 1px solid rgb(228, 228, 228);
+        border-top: none;
         padding: 1em 0;
         .total-purchase__container {
             flex-direction: column;
@@ -202,6 +212,7 @@
                         padding: 0.5em 1em;
                         background-color: $third-color;
                         border: none;
+                        color: white;
                     }
                 }
                 .total-purchase__coupon--title {
@@ -219,7 +230,6 @@
                         font-weight: 300;
                         width: 100%;
                         border-radius: 0;
-                        cursor: pointer;
                     }
                     .continue {
                         background-color: transparent;

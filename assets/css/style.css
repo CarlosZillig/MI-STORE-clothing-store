@@ -35,7 +35,7 @@ body {
   width: 100%;
   position: relative;
   z-index: 2;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(201, 201, 201);
 }
 .header .header__container {
   align-items: center;
@@ -51,7 +51,13 @@ body {
 }
 .header .header__container .header__container-icon .header__mobile-icon {
   font-size: 35px;
-  color: black;
+  color: rgb(31, 31, 31);
+}
+.header .header__container .header__container-icon #menu__mobile-desktop {
+  display: none;
+}
+.header .header__container .header__container-icon .person-anchors {
+  display: none;
 }
 .header .header__container .header__container-logo .header__logo {
   font-family: "Cabin Sketch", cursive;
@@ -61,6 +67,71 @@ body {
   text-decoration: none;
 }
 
+.navbar-desktop {
+  text-align: center;
+  width: 100vw;
+  padding: 0.5em 0;
+}
+.navbar-desktop .navbar__container {
+  display: none;
+}
+.navbar-desktop .navbar__container--input {
+  padding: 0.5em 0;
+}
+.navbar-desktop .navbar__container--input .navbar__input {
+  padding: 1em 0.5em;
+  width: 85vw;
+  outline: none;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
+}
+.navbar-desktop .navbar__container--input .navbar__input::placeholder {
+  color: rgb(197, 197, 197);
+}
+
+@media screen and (min-width: 1100px) {
+  .header .header__container .icon-menu {
+    display: none;
+  }
+  .header .header__container .header__container-logo .header__logo {
+    font-size: 2em;
+  }
+  .header .header__container .header__container-icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .header .header__container .header__container-icon .bi {
+    font-size: 0.8em;
+  }
+  .header .header__container .header__container-icon .person-anchors {
+    display: block;
+  }
+  .navbar-desktop {
+    padding: 1em 0;
+  }
+  .navbar-desktop .navbar__container--input {
+    padding: 1em 0;
+  }
+  .navbar-desktop .navbar__container--input .navbar__input {
+    padding: 0.7em 0.5em;
+    width: 80vw;
+  }
+  .navbar-desktop .navbar__container {
+    display: block;
+  }
+  .navbar-desktop .navbar__container .navbar__list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .navbar-desktop .navbar__container .navbar__list .navbar__item .navbar__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: black;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -263,16 +334,17 @@ body {
   height: 75vh;
 }
 
-.banner__img {
-  width: 100%;
+.banner .banner__container {
+  text-align: center;
+}
+.banner .banner__container .banner__picture .banner-mobile {
+  width: 95vw;
 }
 
 @media screen and (min-width: 1200px) {
   .banner {
     text-align: center;
-  }
-  .banner .banner__img {
-    width: 80%;
+    padding: 1em 0;
   }
 }
 .categories .categories__list {
@@ -291,10 +363,15 @@ body {
 }
 .categories .categories__list .categories__item .categories__link .categories__image--link {
   background-color: white;
-  border: 2px solid #000;
+  border: 1px solid #000;
   border-radius: 50%;
   margin-bottom: 10px;
+  margin-right: 5px;
   position: relative;
+  background: #fff url("../../../assets/img/product2.jpg") no-repeat center;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
 }
 .categories .categories__list .categories__item .categories__link .categories__icon {
   color: #000;
@@ -574,7 +651,7 @@ body {
   padding: 0.5em 0;
 }
 .total-purchase .total-purchase__container .buy__mobile .total-purchase-container__buy .total-purchase__buy {
-  padding: 0.7em;
+  padding: 0.7em 0;
   width: 100%;
   background-color: #ffcbe0;
   outline: none;
@@ -582,6 +659,11 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.total-purchase .total-purchase__container .buy__mobile .total-purchase-container__buy .total-purchase__buy:hover {
+  background-color: pink;
 }
 .total-purchase .total-purchase__container .buy__mobile .total-purchase-container__buy .continue {
   background-color: transparent;
@@ -605,13 +687,19 @@ body {
   display: flex;
 }
 .total-purchase .total-purchase__container .total-purchase__coupon .total-purchase__coupon--container .total-purchase__input {
-  padding: 0.7em 1.2em;
+  padding: 0.7em 0;
   border: none;
   border-bottom: 2px solid #ffcbe0;
   outline: none;
 }
 .total-purchase .total-purchase__container .total-purchase__coupon .total-purchase__coupon--container .total-purchase__btn--coupon {
   border: 2px solid #ffcbe0;
+  background-color: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.total-purchase .total-purchase__container .total-purchase__coupon .total-purchase__coupon--container .total-purchase__btn--coupon:hover {
+  background-color: pink;
 }
 
 @media screen and (min-width: 1024px) {
@@ -677,6 +765,7 @@ body {
     width: 25vw;
     height: 100vh;
     border-left: 1px solid rgb(228, 228, 228);
+    border-top: none;
     padding: 1em 0;
   }
   .total-purchase .total-purchase__container {
@@ -699,6 +788,7 @@ body {
     padding: 0.5em 1em;
     background-color: #ffcbe0;
     border: none;
+    color: white;
   }
   .total-purchase .total-purchase__container .total-purchase__coupon .total-purchase__coupon--title {
     font-size: 0.7em;
@@ -716,7 +806,6 @@ body {
     font-weight: 300;
     width: 100%;
     border-radius: 0;
-    cursor: pointer;
   }
   .total-purchase .total-purchase__container .buy__mobile .total-purchase-container__buy .continue {
     background-color: transparent;

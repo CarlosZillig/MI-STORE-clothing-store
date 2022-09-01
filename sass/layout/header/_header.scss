@@ -5,7 +5,7 @@
    width: 100%;
    position: relative;
    z-index: 2;
-   border-bottom: 1px solid grey;
+   border-bottom: 1px solid rgb(201, 201, 201);
    .header__container {
       align-items: center;
       background-color: white;
@@ -20,7 +20,13 @@
          
          .header__mobile-icon {
             font-size: 35px;
-            color: black;
+            color: rgb(31, 31, 31);
+         }
+         #menu__mobile-desktop {
+            display: none;
+         }
+         .person-anchors {
+            display: none
          }
       }
 
@@ -34,4 +40,80 @@
          }
       }
    }
+}
+
+.navbar-desktop {
+   text-align: center;
+   width: 100vw;
+   padding: 0.5em 0;
+   .navbar__container {
+      display: none;
+   }
+   .navbar__container--input {
+      padding: 0.5em 0;
+      .navbar__input {
+         padding: 1em 0.5em;
+         width: 85vw;
+
+         outline: none;
+         border: 1px solid rgb(197, 197, 197);
+         border-radius: 5px;
+         &::placeholder {
+            color: rgb(197, 197, 197);
+         }
+      }
+   }
+}
+
+@media screen and (min-width: 1100px){
+   .header {
+      .header__container {
+        .icon-menu {
+         display: none;
+        }
+        .header__container-logo {
+         .header__logo {
+            font-size: 2em;
+         }
+        }
+        .header__container-icon {
+         display: flex;
+         gap: 20px;
+         align-items: center;
+         .bi {
+            font-size: 0.8em;
+         }
+         .person-anchors {
+            display: block;
+         }
+        }
+      }
+   }
+   .navbar-desktop {
+      padding: 1em 0;
+      .navbar__container--input {
+         padding: 1em 0;
+         .navbar__input {
+            padding: 0.7em 0.5em;
+            width: 80vw;
+         }
+      }
+      .navbar__container {
+         display: block;
+         .navbar__list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            .navbar__item {
+               .navbar__link {
+                  text-decoration: none;
+                  text-transform: uppercase;
+                  font-size: 0.9em;
+                  color: black;
+               }
+            }
+         }
+      }
+   }
+   
 }

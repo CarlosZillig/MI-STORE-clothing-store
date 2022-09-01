@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <!-- Reset CSS -->
-      <link rel="stylesheet" href="assets/css/reset.css" />
+      <link rel="stylesheet" href="../assets/css/reset.css" />
 
       <!-- Cabin Sketch -->
       <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet" />
@@ -14,7 +14,7 @@
       <script src="https://kit.fontawesome.com/7df7c09821.js" crossorigin="anonymous"></script>
 
       <!-- CSS -->
-      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="stylesheet" href="../assets/css/style.css" />
 
       <title>M-I Store | Cadastro</title>
    </head>
@@ -44,7 +44,7 @@
          <nav class="menu__mobile">
             <ul class="menu__list">
                <li class="menu__item">
-                  <a href="./index.html" class="menu__link link">Inicio</a>
+                  <a href="../index.html" class="menu__link link">Inicio</a>
                   <a href="#" class="menu__link link">Casacos</a>
                   <a href="#" class="menu__link link">Blusas</a>
                   <a href="#" class="menu__link link">Conjuntos</a>
@@ -64,42 +64,62 @@
                <span class="header__mobile-icon" id="menu__mobile"><i class="fa-solid fa-bars"></i></span>
             </div>
             <div class="header__container-logo">
-               <a href="./index.html" class="link">
+               <a href="../index.html" class="link">
                   <span class="header__logo">M-I STORE</span>
                </a>
             </div>
             <div class="header__container-icon">
-               <a href="bag.html">
+               <a href="./bag.html">
                   <span class="header__mobile-icon"><i class="fa-solid fa-cart-shopping"></i></span>
                </a>
             </div>
          </header>
       </section>
-      </section>
 
-      <section class="signup login">
+      <section class="signup">
          <div class="signup__container">
-            <form action="index.html" class="signup__form">
-               <h2 class="signup__title">Login</h2>
+            <form action="../index.html" class="signup__form">
+               <h2 class="signup__title">Cadastre-se!</h2>
+               <div class="form__container">
+                  <label for="name" class="signup__label">Nome:</label>
+                  <input type="text" id="name" class="signup__input" placeholder="Digite seu nome" 
+                  pattern="[A-Za-z]+" required/>
+               </div>
+
+               <div class="form__container">
+                  <label for="lastName" class="signup__label">Sobrenome</label>
+                  <input type="text" id="lastName" class="signup__input" placeholder="Digite seu sobrenome" pattern="[A-Za-z]+" required/>
+               </div>
+
+               <div class="form__container">
+                  <label for="phone" class="signup__label">Número de celular:</label>
+                  <input type="tel" id="phone" class="signup__input" placeholder="00 99999-8888" pattern="[0-9]{10,}" title="Insira um numero válido" required/>
+               </div>
+
                <div class="form__container">
                   <label for="email" class="signup__label">Email:</label>
-                  <input type="email" id="email" class="signup__input" placeholder="seuemail@gmail.com" />
+                  <input type="email" id="email" class="signup__input" placeholder="seuemail@gmail.com" required/>
                </div>
 
                <div class="form__container">
                   <label for="password" class="signup__label">Senha:</label>
-                  <input type="password" id="password" class="signup__input" placeholder="Digite sua senha" />
+                  <input type="password" id="password" class="signup__input" placeholder="Digite sua senha" pattern="[a-zA-Z0-9]{3,}" title="Minimo 3 caracteres" required/>
+               </div>
+
+               <div class="form__container">
+                  <label for="password" class="signup__label">Confirme sua senha:</label>
+                  <input type="password" id="password" class="signup__input" placeholder="Confirme sua senha" required/>
                </div>
 
                <div class="form__container">
                   <p class="form__text">
-                     Ainda não tem uma conta?
-                     <a href="./signup.html" class="form__link link">Fazer Cadastro</a>
+                     Já tem uma conta?
+                     <a href="./login.html" class="form__link link">Fazer Login</a>
                   </p>
                </div>
 
                <div class="form__container">
-                  <button type="submit" class="button form__button">Login</button>
+                  <button type="submit" class="button form__button">Cadastrar</button>
                </div>
             </form>
          </div>
@@ -111,6 +131,6 @@
          </footer>
       </section>
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-      <script src="js/main.js"></script>
+      <script src="../js/main.js"></script>
    </body>
 </html>
