@@ -1,8 +1,10 @@
 .signup {
-   text-align: center;
+   display: flex;
+   justify-content: center;
+   width: 100vw;
    .signup__container {
       margin: 2em 0;
-
+      width: 90vw;
       .signup__toplogo {
          margin-bottom: 0.3em;
          width: 70px;
@@ -11,42 +13,44 @@
          color: $secondary-color;
          font-size: 24px;
          text-transform: uppercase;
+         text-align: center;
          font-weight: 300;
 
          margin: 0 auto;
-         width: 75vw;
          padding-bottom: 0.5em;
          border-bottom: 1px solid $main-color;
       }
 
       .signup__form {
+         display: flex;
+         flex-direction: column;
          align-items: center;
+
+         margin: 2em auto;
+         padding: 2em 0;
+
          background-color: white;
          box-shadow: rgba(0, 0, 0, 0.35) 0 0 15px;
          border-radius: 10px;
-         display: flex;
-         flex-direction: column;
-         justify-items: center;
-         margin: 2em auto;
-         padding: 2em 0;
-         width: 90vw;
-
          .form__container {
-            display: flex;
-            flex-direction: column;
             line-height: 30px;
             padding: 0.75em 0;
-            text-align: left;
-
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .form {
+               width: 90%;
+            }
             .signup__label {
                font-weight: 300;
+               display: inline-block;
             }
 
             .signup__input {
                border: 1px solid rgb(145, 145, 145);
                border-radius: 5px;
                padding: 1em;
-               width: 65vw;
+               width: 90%;
                font-size: 1em;
                &::placeholder {
                   font-family: $main-font;
@@ -61,8 +65,8 @@
                color: white;
                cursor: pointer;
                margin: 0 auto;
-               width: 75vw;
-
+               width: 75%;
+               transition: 0.5s;
                &:hover {
                   background-color: $secondary-color;
                }
@@ -85,5 +89,38 @@
 }
 
 .login {
-   height: 75vh;
+   height: 100vh;
+}
+
+@media screen and (min-width: 1100px) {
+   .signup {
+      .signup__container {
+         .signup__form {
+            width: 50vw;
+            .form__container {
+               .form-desktop {
+                  display: flex;
+                  align-items: center;
+               }
+               .form-name {
+                  width: 50%;
+               }
+               .form {
+                  .signup__label {
+                     font-size: 0.9em;
+                  }
+                  .signup__input {
+                     padding: 0.8em;
+                     &::placeholder {
+                        font-size: 0.9em;
+                     }
+                  }
+               }
+               .form__button {
+                  font-size: 1em;
+               }
+            }
+         }
+      }
+   }
 }

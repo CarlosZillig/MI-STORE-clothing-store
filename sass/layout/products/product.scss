@@ -67,12 +67,25 @@
    }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1100px) {
    .products__list {
       grid-template-columns: repeat(5, 1fr);
-      .product__banner{
-         min-width: 100%;
-         min-height: 230px;
-      }
+      .product {
+        .product__link {
+         .product__banner{
+            min-width: 100%;
+            min-height: 230px;
+         }
+         .product__title {
+            font-size: 1em;
+         }
+         .product__price {
+            font-size: 1em;
+         }
+         .product__button {
+            padding: 0.5em;
+         }
+        }
+      }      
    }
 }
