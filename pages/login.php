@@ -63,7 +63,6 @@
             <div class="header__container-icon" id="menu__mobile">
                <span class="header__mobile-icon"><i class="bi bi-list icon-menu"></i></span>
             </div>
-
             <div class="header__container-logo">
                <a href="../index.html" class="link">
                   <span class="header__logo">M-I STORE</span>
@@ -76,63 +75,35 @@
             </div>
          </header>
       </section>
+      </section>
 
-      <section class="signup">
+      <section class="signup login">
          <div class="signup__container">
-            <form action="../index.html" class="signup__form">
-               <h2 class="signup__title">Cadastre-se!</h2>
-               <div class="form__container">
-                  <div class="form">
-                     <label for="name" class="signup__label">Nome:</label>
-                     <input type="text" id="name" class="signup__input" placeholder="Digite seu nome" 
-                     pattern="[A-Za-z]+" required/>
-                  </div>
-               </div>
-
-               <div class="form__container">
-                  <div class="form">
-                     <label for="lastName" class="signup__label">Sobrenome</label>
-                     <input type="text" id="lastName" class="signup__input" placeholder="Digite seu sobrenome" pattern="[A-Za-z]+" required/>
-                  </div>
-               </div>
-
-               <div class="form__container">
-                  <div class="form">
-                     <label for="phone" class="signup__label">Número de celular:</label>
-                     <input type="tel" id="phone" class="signup__input" placeholder="00 99999-8888" pattern="[0-9]{10,}" title="Insira um numero válido" required/>
-                  </div>
-               </div>
-
+            <form action="index.html" class="signup__form">
+               <h2 class="signup__title">Login</h2>
                <div class="form__container">
                   <div class="form">
                      <label for="email" class="signup__label">Email:</label>
-                     <input type="email" id="email" class="signup__input" placeholder="seuemail@gmail.com" required/>
-                  </div>
+                     <input type="email" id="email" class="signup__input" placeholder="seuemail@gmail.com" require/>
+                  </div>  
                </div>
 
                <div class="form__container">
                   <div class="form">
                      <label for="password" class="signup__label">Senha:</label>
-                     <input type="password" id="password" class="signup__input" placeholder="Digite sua senha" pattern="[a-zA-Z0-9]{3,}" title="Minimo 3 caracteres" required/>
-                  </div>
-               </div>
-
-               <div class="form__container">
-                  <div class="form">
-                     <label for="password" class="signup__label">Confirme sua senha:</label>
-                     <input type="password" id="password" class="signup__input" placeholder="Confirme sua senha" required/>
+                     <input type="password" id="password" class="signup__input" placeholder="Digite sua senha" require/>
                   </div>
                </div>
 
                <div class="form__container">
                   <p class="form__text">
-                     Já tem uma conta?
-                     <a href="./login.html" class="form__link link">Fazer Login</a>
+                     Ainda não tem uma conta?
+                     <a href="./signup.html" class="form__link link">Fazer Cadastro</a>
                   </p>
                </div>
 
                <div class="form__container">
-                  <button type="submit" class="button form__button">Cadastrar</button>
+                  <button type="submit" class="button form__button">Login</button>
                </div>
             </form>
          </div>

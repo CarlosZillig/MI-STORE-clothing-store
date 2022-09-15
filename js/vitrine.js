@@ -6,6 +6,7 @@ const produtos = [
    new Product(0, "Vestido Cinza", "/assets/img/product2.jpg", 0, 250),
    new Product(0, "Vestido Teste", "/assets/img/product4.jpg", 0, 250),
    new Product(0, "Vestido Nike Fodase", "/assets/img/product2.jpg", 0, 210),
+   new Product(0, "Vestido lindo", "/assets/img/product4.jpg", 1, 240),
 ];
 
 listProducts = () => {
@@ -19,7 +20,7 @@ listProducts = () => {
                   <p class="product__title">${item.title}</p>
                   <p class="product__price">R$${item.price}</p>
                </div>
-               <button type="submit" class="product__button button">Comprar</button>
+               <button type="submit" class="product__button button">Adicionar ao carrinho</button>
             </a>
          </li>
         `;

@@ -7,3 +7,13 @@ class Product {
       this.price = price
    }
 }
+
+class Pessoas {
+   constructor(nome, cpf, admin) {
+      this.nome = nome,
+      this.nome = cpf,
+      this.admin = false
+   }
+}
+
+

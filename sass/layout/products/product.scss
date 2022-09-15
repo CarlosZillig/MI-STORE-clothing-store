@@ -49,6 +49,11 @@
          .product__button {
             background-color: $main-color;
             color: black;
+            font-size: 0.8em;
+            &:hover {
+               background-color: $hover-color;
+               color: $white-color;
+            }
          }
       }
    }
@@ -63,6 +68,9 @@
       .product__banner{
          min-width: 100%;
          min-height: 300px;
+      }
+      .product__button {
+         padding: 1em;
       }
    }
 }
@@ -83,7 +91,7 @@
             font-size: 1em;
          }
          .product__button {
-            padding: 0.5em;
+            padding: 1em;
          }
         }
       }      

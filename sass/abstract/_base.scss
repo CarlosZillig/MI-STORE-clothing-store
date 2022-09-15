@@ -8,17 +8,12 @@ body {
    border: 1px solid $button-border;
    border-radius: 5px;
    color: $button-color;
-   font-size: $button-font;
    text-align: center;
    text-decoration: none;
    text-transform: uppercase;
-   font-size: 18px;
    padding: $padding-button;
-
-   &:hover {
-      border-color: $hover-color;
-      color: $hover-color;
-   }
+   transition: .5s;
+   cursor: pointer;
 }
 
 .link {
