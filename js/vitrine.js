@@ -1,12 +1,7 @@
 const productList = document.getElementById("products__list");
 
 const produtos = [
-   new Product(0, "Teste", "/assets/img/product1.jpg", 3, 199), 
-   new Product(0, "Vestido Roxo", "/assets/img/product3.jpg", 0, 250),
-   new Product(0, "Vestido Cinza", "/assets/img/product2.jpg", 0, 250),
-   new Product(0, "Vestido Teste", "/assets/img/product4.jpg", 0, 250),
-   new Product(0, "Vestido Nike Fodase", "/assets/img/product2.jpg", 0, 210),
-   new Product(0, "Vestido lindo", "/assets/img/product4.jpg", 1, 240),
+   new Product(0, "Teste", "./assets/img/product1.jpg", 3, 199), 
 ];
 
 listProducts = () => {

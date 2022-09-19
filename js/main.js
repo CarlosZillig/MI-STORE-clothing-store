@@ -16,3 +16,11 @@ menuLinks.forEach((item) => {
       toggleMenu(menuSection);
    });
 });
+
+const btnAddColor = document.querySelector('.btn-add-color');
+btnAddColor.addEventListener('click', () => {
+   let colorsList = document.querySelector('.form__item-colors')
+   colorsList.innerHTML += `
+      <input type="color" id="colors" name="colors" required placeholder="Quais as cores disponíveis?"/>
+   `
+})

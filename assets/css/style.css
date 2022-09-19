@@ -894,16 +894,16 @@ body {
 .form-add {
   display: flex;
   justify-content: center;
-  padding: 2em 0;
+  padding: 2em 1em;
 }
 .form-add .form-add__container {
-  background-color: rgb(219, 208, 208);
+  background-color: rgb(241, 241, 241);
+  border: 2px solid #f7b390;
   border-radius: 10px;
   padding: 1em;
-  width: 80%;
 }
 .form-add .form-add__container .form {
-  padding: 2em 0;
+  padding: 0 0 2em 0;
 }
 .form-add .form-add__container .form .form__item {
   padding: 1em 0;
@@ -914,30 +914,150 @@ body {
   padding-bottom: 0.5em;
 }
 .form-add .form-add__container .form .form__item input {
-  padding: 0.5em 1em;
+  outline: none;
+  border: 1px solid rgb(160, 159, 159);
+  border-radius: 20px;
+  padding: 1em;
+  width: 90%;
+}
+.form-add .form-add__container .form .form__item input::placeholder {
+  color: rgb(160, 159, 159);
+  font-size: 17px;
+}
+.form-add .form-add__container .form .form__item input[type=color] {
+  border-radius: 20px;
+  width: 100%;
+  height: 45px;
+  padding: 1em;
+}
+.form-add .form-add__container .form .form__item input[type=color]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.form-add .form-add__container .form .form__item input[type=color]::-webkit-color-swatch {
+  border: none;
+  border-radius: 20px;
 }
 .form-add .form-add__container .form .form__item .input-file {
   font-size: 15px;
-  max-width: 100vw;
+}
+.form-add .form-add__container .form .form__item .form__item-colors {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.form-add .form-add__container .form .form__item .form__item-add {
+  display: flex;
+  justify-content: end;
+}
+.form-add .form-add__container .form .form__item .form__item-add .btn-add-color {
+  font-size: 17px;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: 1px solid rgb(160, 159, 159);
+  border-radius: 50%;
 }
 .form-add .form-add__container h2 {
   font-size: 19px;
   padding-bottom: 0.5em;
 }
+.form-add .form-add__container .options {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+}
 .form-add .form-add__container select {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 20px;
   font-size: 18px;
 }
 .form-add .form-add__container select option {
   font-size: 14px;
+  max-width: 100%;
 }
 .form-add .form-add__container .form-add__button {
-  width: 100%;
-  padding: 0.5em;
   font-size: 20px;
   color: white;
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 1em;
   background-color: green;
+  border-radius: 20px;
   border: none;
   outline: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .form-add {
+    display: flex;
+    justify-content: center;
+    padding: 2em 1em;
+  }
+  .form-add .form-add__container {
+    width: 90vw;
+  }
+  .form-add .form-add__container .form .form__item {
+    width: 45%;
+  }
+  .form-add .form-add__container .form .form__item label {
+    font-size: 16px;
+  }
+  .form-add .form-add__container .form .form__item input {
+    width: 90%;
+    padding: 1em;
+  }
+  .form-add .form-add__container .form .form__item input::placeholder {
+    font-size: 15px;
+  }
+  .form-add .form-add__container .form .form__item .input-file {
+    width: 73%;
+    padding: 0.5em;
+    text-align: center;
+  }
+  .form-add .form-add__container .form .form__item .form__item-colors {
+    justify-content: start;
+  }
+  .form-add .form-add__container .form .form__item .form__item-colors input {
+    width: 23%;
+  }
+  .form-add .form-add__container .form .form__item .form__item-add {
+    justify-content: start;
+  }
+  .form-add .form-add__container .form .form__item .form__item-add .btn-add-color {
+    font-size: 18px;
+  }
+  .form-add .form-add__container .form .file {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .form-add .form-add__container .form .colors {
+    width: 100%;
+  }
+  .form-add .form-add__container .form .btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  .form-add .form-add__container .form .btn-container .form-add__button {
+    width: 30%;
+    padding: 0.8em;
+    font-size: 16px;
+  }
+  .form-add .form-add__container .form .container-for-desktop {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .form-add .form-add__container .options select {
+    font-size: 16px;
+  }
+  .form-add .form-add__container h2 {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

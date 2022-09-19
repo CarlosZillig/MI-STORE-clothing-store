@@ -1,3 +1,4 @@
+<?php include 'controller.php';?>
 <!DOCTYPE html>
 <html lang="pt-br">
    <head>
@@ -31,8 +32,8 @@
             <div class="menu__container-user-content">
                <ul>
                   <li class="menu__list--user">
-                     <a href="./signup.html" class="menu__link--user button">Cadastre-se</a>
-                     <span class="menu__span--user">Ja tem uma conta? <a href="./login.html" class="menu__link link">Fazer login</a></span>
+                     <a href="./signup.php" class="menu__link--user button">Cadastre-se</a>
+                     <span class="menu__span--user">Ja tem uma conta? <a href="./login.php" class="menu__link link">Fazer login</a></span>
                   </li>
                </ul>
             </div>
@@ -79,7 +80,7 @@
 
       <section class="signup login">
          <div class="signup__container">
-            <form action="index.html" class="signup__form">
+            <form action="login.php" class="signup__form">
                <h2 class="signup__title">Login</h2>
                <div class="form__container">
                   <div class="form">
@@ -103,7 +104,7 @@
                </div>
 
                <div class="form__container">
-                  <button type="submit" class="button form__button">Login</button>
+                  <button type="submit"  name="login" class="button form__button">Login</button>
                </div>
             </form>
          </div>

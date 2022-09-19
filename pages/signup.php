@@ -34,7 +34,7 @@
                <ul>
                   <li class="menu__list--user">
                      <a href="./signup.php" class="menu__link--user button">Cadastre-se</a>
-                     <span class="menu__span--user">Ja tem uma conta? <a href="./login.html" class="menu__link link">Fazer login</a></span>
+                     <span class="menu__span--user">Ja tem uma conta? <a href="./login.php" class="menu__link link">Fazer login</a></span>
                   </li>
                </ul>
             </div>
