@@ -81,7 +81,7 @@
 
       <section class="signup">
          <div class="signup__container">
-            <form action="./index.html" method="POST" class="signup__form">
+            <form action="../index.html" method="POST" class="signup__form">
                <h2 class="signup__title">Cadastre-se!</h2>
                <div class="form__container">
                   <div class="form">
