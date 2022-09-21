@@ -80,19 +80,19 @@
 
       <section class="signup login">
          <div class="signup__container">
-            <form action="login.php" class="signup__form">
+            <form action="login.php" class="signup__form" method="POST">
                <h2 class="signup__title">Login</h2>
                <div class="form__container">
                   <div class="form">
                      <label for="email" class="signup__label">Email:</label>
-                     <input type="email" id="email" class="signup__input" placeholder="seuemail@gmail.com" require/>
+                     <input type="email" id="email" class="signup__input" placeholder="seuemail@gmail.com" require name="email"/>
                   </div>  
                </div>
 
                <div class="form__container">
                   <div class="form">
                      <label for="password" class="signup__label">Senha:</label>
-                     <input type="password" id="password" class="signup__input" placeholder="Digite sua senha" require/>
+                     <input type="password" id="password" class="signup__input" placeholder="Digite sua senha" name="senha" require/>
                   </div>
                </div>
 
@@ -104,7 +104,7 @@
                </div>
 
                <div class="form__container">
-                  <button type="submit"  name="login" class="button form__button">Login</button>
+                  <button type="submit" name="login" class="button form__button">Login</button>
                </div>
             </form>
          </div>

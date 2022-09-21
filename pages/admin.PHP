@@ -1,3 +1,12 @@
+<?php
+session_start();
+// print_r($_SESSION);
+if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)) {
+    unset($_SESSION['email']);
+    unset($_SESSION['senha']);
+    header('Location: login.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
    <head>
@@ -9,9 +18,6 @@
 
       <!-- Cabin Sketch -->
       <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet" />
-
-      <!--Font awsome-->
-      <script src="https://kit.fontawesome.com/7df7c09821.js" crossorigin="anonymous"></script>
 
       <!-- CSS -->
       <link rel="stylesheet" href="../assets/css/style.css" />
@@ -82,23 +88,23 @@
             <h2>Adicionar um item em?</h2>
             <div class="options">
                <select name="add-item" id="add-item">
-                  <option value="Promoções">Promoções</option>
-                  <option value="Novidades">Novidades</option>
-                  <option value="Casacos">Casacos</option>
-                  <option value="Blusas">Blusas</option>
-                  <option value="Conjutos">Conjutos</option>
-                  <option value="Macacão">Macacão</option>
-                  <option value="Blazers">Blazers</option>
-                  <option value="Camisas">Camisas</option>
-                  <option value="Calças">Calças</option>
-                  <option value="Saias">Saias</option>
-                  <option value="Shorts">Shorts</option>
+                  <option value="Promoções" class="sessoes">Promoções</option>
+                  <option value="Novidades" class="sessoes">Novidades</option>
+                  <option value="Casacos" class="sessoes">Casacos</option>
+                  <option value="Blusas" class="sessoes">Blusas</option>
+                  <option value="Conjutos" class="sessoes">Conjutos</option>
+                  <option value="Macacão" class="sessoes">Macacão</option>
+                  <option value="Blazers" class="sessoes">Blazers</option>
+                  <option value="Camisas" class="sessoes">Camisas</option>
+                  <option value="Calças" class="sessoes">Calças</option>
+                  <option value="Saias" class="sessoes">Saias</option>
+                  <option value="Shorts" class="sessoes">Shorts</option>
                </select>
             </div>
             <form onsubmit="" class="form">
                <div class="form__item file">
                   <label for="image">Adicione a imagem do produto:</label>
-                  <input type="file" id="imgProduct" name="image" required class="input-file" />
+                  <input type="file" id="imgProduct" name="image" class="input-file" />
                </div>
                <div class="container-for-desktop">
                   <div class="form__item">
@@ -134,12 +140,17 @@
                   </div>       
                </div>
                <div class="btn-container">
-                  <button type="submit" class="form-add__button" id="btnAdd" style="cursor: pointer">Adicionar</button>
+                  <button type="submit" class="form-add__button" id="btnAdd">Adicionar</button>
                </div>
             </form>
          </div>
       </section>
+
+      <section id="a">
+
+      </section>
       <script src="../js/product.js"></script>
       <script src="../js/main.js"></script>
+      <script src="../js/vitrine.js"></script>
    </body>
 </html>

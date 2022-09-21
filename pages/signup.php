@@ -1,5 +1,4 @@
 <?php include 'controller.php';?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
    <head>
@@ -81,7 +80,8 @@
 
       <section class="signup">
          <div class="signup__container">
-            <form action="../index.html" method="POST" class="signup__form">
+            <form action="signup.php" method="POST" class="signup__form">
+            <!-- <form action="../index.html" method="POST" class="signup__form"> -->
                <h2 class="signup__title">Cadastre-se!</h2>
                <div class="form__container">
                   <div class="form">
@@ -129,12 +129,12 @@
                <div class="form__container">
                   <p class="form__text">
                      Já tem uma conta?
-                     <a href="./login.html" class="form__link link">Fazer Login</a>
+                     <a href="./login.php" class="form__link link">Fazer Login</a>
                   </p>
                </div>
 
                <div class="form__container">
-                  <button type="submit" name="btn" class="button form__button">Cadastrar</button>
+                  <button type="submit" name="button" class="button form__button">Cadastrar</button>
                </div>
             </form>
          </div>
